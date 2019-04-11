@@ -33,7 +33,7 @@ ReactDOM.render(
           paddingBottom: 40
         }}
       >
-        Under konstruktion 🏗️
+        🌲 Under konstruktion 🏗️
       </div>
       <div
         style={{
