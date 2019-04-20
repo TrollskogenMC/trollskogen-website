@@ -1,0 +1,21 @@
+.pulse {
+	-webkit-animation: pulse 0.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate both;
+	        animation: pulse 0.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate both;
+}
+
+ @-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px 5px #41924B;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #41924B;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px 5px #87E293;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #87E293;
+  }
+}

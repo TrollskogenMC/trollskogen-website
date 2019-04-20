@@ -1,0 +1,29 @@
+.staff-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.staff-member {
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+
+.staff-member:nth-child(even) {
+    margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-right {
+        margin-left: 0;
+    }
+
+    .post-area {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .post {
+        width: 100%;
+    }
+}

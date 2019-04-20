@@ -1,0 +1,65 @@
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    margin: -2em -4em;
+    min-height: 500px;
+    color: #fdfdfd;
+    background: url("../images/bg-image-trollskogen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 3px 7px 5px #111, 0 0 0.4em;
+    overflow:hidden;
+}
+
+.jumbotron a {
+    color: #fdfdfd;
+}
+
+.jumbotron h1 {
+    font-size: 32px;
+}
+.decription {
+    margin: 1em 2em 0 2em;
+    overflow: wrap;
+    flex-grow: 1;
+}
+
+.server-links {
+    align-self: center;
+    font-size: 20px;
+    justify-items: center;
+    margin: 0 8em 2em 2em;
+    white-space: nowrap;
+}
+
+.server-links span + span {
+    margin-left: 1em;
+}
+
+
+.post-area {
+    margin-top: 4em;
+    display: flex;
+}
+
+.post-left {
+    flex-grow: 1;
+}
+
+.post-right {
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .server-links {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8em;
+    }
+    
+    .server-links span + span {
+        margin-top: 1em;
+        margin-left: 0;
+    }
+}
