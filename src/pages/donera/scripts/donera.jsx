@@ -5,7 +5,7 @@ export default function Donera() {
     <div>
       <h1>Donationer</h1>
       <p>
-        För att vi ska kunna utveckla servern och betala de utkomster som kommer
+        För att vi ska kunna utveckla servern och betala de utgifter som kommer
         med att driva en minecraft server så är vi beroende av donationer. Som
         tack för hjälpen får du som donerar tillgång till cosmetics, 2 extra
         homes och tillgång till teleport-kommando.
