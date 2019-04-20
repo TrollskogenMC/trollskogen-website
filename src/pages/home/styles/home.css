@@ -51,6 +51,10 @@
     margin-left: 1em;
 }
 
+.post-staff-area {
+    width: 33%;
+}
+
 @media only screen and (max-width: 600px) {
     .server-links {
         display: flex;
@@ -62,4 +66,9 @@
         margin-top: 1em;
         margin-left: 0;
     }
+    
+    .post-staff-area {
+        width: 100%;
+    }
+
 }

@@ -39,7 +39,7 @@ export default function HomePage() {
             med att alla ska följa de regler vi har satt upp.
           </p>
         </div>
-        <div className="post post-right">
+        <div className="post post-right post-staff-area">
           <hr />
           <h2>Vi i staff</h2>
           <StaffList />
