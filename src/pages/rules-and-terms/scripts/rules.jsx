@@ -6,7 +6,7 @@ export default function Rules() {
     <div>
       <h2>Regler</h2>
       <p>
-        Se till att läsa reglernar nogrant och fråga någon i staff på discord
+        Se till att läsa reglerna noggrant och fråga någon i staff på Discord
         eller på servern om något är otydligt.
       </p>
       <ul className="server-rules">
