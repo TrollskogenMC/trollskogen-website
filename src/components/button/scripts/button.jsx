@@ -3,7 +3,7 @@ import "../styles/button.css";
 
 export default function Button({ children, href }) {
   return (
-    <a className="btn btn-default" href={href}>
+    <a className="btn" href={href}>
       {children}
     </a>
   );
