@@ -61,8 +61,9 @@ export default function Rules() {
             PvP:a kan du göra det i PvP-området i spawn.
           </li>
           <li>
-            Större farmer med många drar ner serverprestandan, ha bara så många
-            djur eller monster som du behöver(max 250).
+            Större farmer med många djur eller monster drar ner
+            serverprestandan, ha bara så många djur eller monster som du
+            behöver(max 250).
           </li>
         </ol>
       </ul>
