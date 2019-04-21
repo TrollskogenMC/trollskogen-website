@@ -13,7 +13,7 @@ export default function Rules() {
         <ol>
           <li>Håll en trevlig ton</li>
           <ol type="a">
-            <li> Skriv inte i bara stora bokstäver (CAPS LOCK)</li>
+            <li>Skriv inte i bara stora bokstäver (CAPS LOCK)</li>
             <li>
               Skriv inte nedlåtande till varandra(varken i privata chatter eller
               i offentliga chatter på servern).
