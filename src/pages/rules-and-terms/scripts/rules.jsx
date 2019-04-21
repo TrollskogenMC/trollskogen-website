@@ -15,7 +15,7 @@ export default function Rules() {
           <ol type="a">
             <li>Skriv inte i bara stora bokstäver (CAPS LOCK)</li>
             <li>
-              Skriv inte nedlåtande till varandra(varken i privata chatter eller
+              Skriv inte nedlåtande till varandra(varken i privata eller
               offentliga chatter på servern).
             </li>
             <li>Ingen spam eller reklam till andra servrar.</li>
