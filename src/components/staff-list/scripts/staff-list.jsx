@@ -8,7 +8,7 @@ export default function StaffList({ text }) {
     <div className="staff-list">
       <div className="staff-member">
         <img src={hornta} width="75" height="75" alt="hornta" />
-        Hornta
+        hornta
         <br /> Admin
       </div>
       <div className="staff-member">
