@@ -60,6 +60,10 @@ export default function Rules() {
             Att göra fällor för att döda andra spelare är inte okej. Om du vill
             PvP:a kan du göra det i PvP-området i spawn.
           </li>
+          <li>
+            Större farmer med många drar ner serverprestandan, ha bara så många
+            djur eller monster som du behöver(max 250).
+          </li>
         </ol>
       </ul>
     </div>
