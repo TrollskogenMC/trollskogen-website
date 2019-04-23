@@ -69,7 +69,7 @@ export default function Rules() {
           <br />
           <li>
             Om det inte är tydligt vad du säljer i din shop så måste du ha en
-            ytterligare förklarande skylt.
+            ytterligare förklarande skylt som förklarar vad du säljer.
           </li>
         </ol>
       </ul>
