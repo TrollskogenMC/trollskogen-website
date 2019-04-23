@@ -21,7 +21,7 @@ export default function Routes() {
             <NavButton>Regler</NavButton>
           </Link>
           <Link to="/donera">
-            <NavButton>donera</NavButton>
+            <NavButton>Donera</NavButton>
           </Link>
         </Navbar>
         <div
