@@ -10,7 +10,7 @@ export default function Donera() {
         tack för hjälpen får du som donerar tillgång till cosmetics, 2 extra
         homes och tillgång till teleport-kommando.
       </p>
-      <div class="text-center">
+      <div className="text-center">
         <Button href="https://trollskogen.tebex.io">Donera här</Button>
       </div>
     </div>

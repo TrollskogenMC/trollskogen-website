@@ -5,12 +5,15 @@
 
 .staff-member {
     display: inline-flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
-.staff-member:nth-child(even) {
-    margin-left: 0.5em;
+.staff-row {
+    min-width: 100%;
+}
+
+.staff-member {
+    margin-right: 0.5em;
 }
 
 @media only screen and (max-width: 600px) {
