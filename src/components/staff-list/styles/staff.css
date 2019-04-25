@@ -1,33 +1,26 @@
+.staff-member {
+    width: 80px;
+    height: 100px;
+}
+
 .staff-list {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
 }
 
-.staff-member {
-    display: inline-flex;
-    flex-direction: column;    
-}
+.staff-member:nth-child(2n) {
+    page-break-after: always;
+    break-after: always; 
+  }
 
-.staff-row {
-    min-width: 100%;
-}
-
-.staff-member {
-    margin-right: 0.5em;
+.staff-img {
+    height: auto;
 }
 
 @media only screen and (max-width: 600px) {
     .post-right {
         margin-left: 0;
-    }
-
-    .post-area {
-        display: inline-flex;
-        flex-direction: column;
-    }
-    
-
-    .post {
-        width: 100%;
     }
 }
