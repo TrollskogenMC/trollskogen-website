@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/staff.css";
 import philip from "../images/philip2096.png";
-import hornta from "../images/hornta.png";
 import vixaan from "../images/vixaan.png";
+import hornta from "../images/hornta.png";
 import mistresslilith from "../images/mistresslilith.png";
 
 export default function StaffList({ text }) {
