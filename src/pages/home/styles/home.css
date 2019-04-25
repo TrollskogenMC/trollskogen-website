@@ -52,8 +52,10 @@
 }
 
 .post-staff-area {
-    width: 33%;
+    min-width: 33%;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .server-links {
@@ -68,6 +70,15 @@
     }
     
     .post-staff-area {
+        width: 100%;
+    }
+
+    .post-area {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .post {
         width: 100%;
     }
 
