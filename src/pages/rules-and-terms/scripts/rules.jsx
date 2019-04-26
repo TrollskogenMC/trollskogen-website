@@ -79,7 +79,7 @@ export default function Rules() {
           <br />
           <li>
             Att använda flera konton på servern är inte okej, det ger ett
-            osjysst övertag på servern.
+            oschysst övertag på servern.
           </li>
         </ol>
       </ul>
