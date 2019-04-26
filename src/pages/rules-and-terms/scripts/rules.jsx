@@ -71,6 +71,16 @@ export default function Rules() {
             Om det inte är tydligt vad du säljer i din shop så måste du ha en
             ytterligare förklarande skylt som förklarar vad du säljer.
           </li>
+          <br />
+          <li>
+            Samtliga redstone-klockor ska gå att stänga av och ska vara av när
+            de inte används.
+          </li>
+          <br />
+          <li>
+            Att använda flera konton på servern är inte okej, det ger ett
+            osjysst övertag på servern.
+          </li>
         </ol>
       </ul>
     </div>
