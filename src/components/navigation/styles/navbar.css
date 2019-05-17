@@ -33,7 +33,7 @@
     transition: color .2s ease-in-out;
 }
 
-.nav-button:hover {
+.is-desktop .nav-button:hover {
     color: #ddd;
 }
 
