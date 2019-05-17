@@ -29,10 +29,14 @@
 
 .nav-button {
     padding: 0 .5em;
+    max-width: 5em;
+    transition: color .2s ease-in-out;
 }
 
 .nav-button:hover {
     color: #ddd;
-    transition: color .2s ease-in-out;
 }
 
+.nav-button-active {
+    color: #AFEAAA;
+}
