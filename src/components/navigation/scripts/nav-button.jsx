@@ -1,12 +1,12 @@
 import React from "react";
 export default function NavButton({ children, logo, isActive }) {
   return (
-    <span
+    <div
       className={`nav-button ${logo ? "nav-button-logo" : ""}${
         isActive ? "nav-button-active" : ""
       }`}
     >
       {children}
-    </span>
+    </div>
   );
 }

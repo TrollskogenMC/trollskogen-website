@@ -8,7 +8,7 @@ export default function Navbar({ children }) {
 
   return (
     <div className={`navbar${!hasTouch() ? " is-desktop" : ""}`}>
-      <div className="btn-group">{children}</div>
+      {children}
     </div>
   );
 }
