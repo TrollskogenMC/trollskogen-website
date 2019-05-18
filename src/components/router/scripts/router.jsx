@@ -12,12 +12,30 @@ export default class Routes extends React.Component {
     this.state = {};
   }
 
+  getSelectStateByPath(path) {
+    switch (path) {
+      case "/regler":
+        return "regler";
+      case "/donera":
+        return "donera";
+      default:
+        return "";
+    }
+    return;
+  }
+
   notFound() {
     return <div>Nu gick något knas</div>;
   }
 
   handleItemClick(name) {
     this.setState({ selectedNav: name });
+  }
+
+  componentDidMount() {
+    this.setState({
+      selectedNav: this.getSelectStateByPath(window.location.pathname)
+    });
   }
 
   render() {
