@@ -1,6 +1,4 @@
 import React from "react";
-import PulsingButton from "../../../components/pulsing-button/scripts/pulsing-button";
-import DownIcon from "../../../icons/down-icon.jsx";
 import "../styles/home.css";
 import StaffList from "../../../components/staff-list/scripts/staff-list";
 export default function HomePage() {
@@ -13,7 +11,8 @@ export default function HomePage() {
             Kul att du kikar in! Trollskogen är ett nytt svenskt
             minecraft-comunity som startades i februari 2019. Vi värnar om att
             ha ett moget community och därför kommer vi att vara stränga med
-            reglerna. <br />
+            reglerna.
+            <br />
             <br />
             <br />
           </p>
