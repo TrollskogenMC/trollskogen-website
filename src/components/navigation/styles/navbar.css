@@ -8,7 +8,6 @@
     width: 100%;
     font-size: 18px;
     align-items: center;
-    justify-content: space-between;
     color: #fdfdfd;
     box-shadow: 0px 1px 6px 1px #111, 0 0 0.4em;
 }
@@ -20,11 +19,6 @@
 .navbar a {
     text-decoration: none;
     color: inherit;
-}
-
-.btn-group {
-    width: 100%;
-    justify-content: space-between;
 }
 
 .nav-button {

@@ -12,20 +12,8 @@ export default class Routes extends React.Component {
     this.state = {};
   }
 
-  getSelectStateByPath(path) {
-    switch (path) {
-      case "/regler":
-        return "regler";
-      case "/donera":
-        return "donera";
-      default:
-        return "";
-    }
-    return;
-  }
-
   notFound() {
-    return <div>Nu gick något knas</div>;
+    return <div>Den här sidan verkar inte finnas.</div>;
   }
 
   handleItemClick(name) {
@@ -34,8 +22,30 @@ export default class Routes extends React.Component {
 
   componentDidMount() {
     this.setState({
-      selectedNav: this.getSelectStateByPath(window.location.pathname)
+      selectedNav: window.location.pathname
     });
+  }
+
+  getLinks() {
+    return [
+      {
+        content: "Trollskogen",
+        type: "logo",
+        linkTo: "/"
+      },
+      {
+        content: "Regler",
+        type: "button",
+        linkTo: "/regler",
+        isActive: this.state.selectedNav === "/regler"
+      },
+      {
+        content: "Donera",
+        type: "button",
+        linkTo: "/donera",
+        isActive: this.state.selectedNav === "/donera"
+      }
+    ];
   }
 
   render() {
@@ -44,34 +54,22 @@ export default class Routes extends React.Component {
         <BrowserRouter>
           <div>
             <Navbar>
-              <Link
-                onClick={() => {
-                  this.handleItemClick("");
-                }}
-                to="/"
-              >
-                <NavButton logo>Trollskogen</NavButton>
-              </Link>
-              <Link
-                to="/regler"
-                onClick={() => {
-                  this.handleItemClick("regler");
-                }}
-              >
-                <NavButton isActive={this.state.selectedNav === "regler"}>
-                  Regler
-                </NavButton>
-              </Link>
-              <Link
-                to="/donera"
-                onClick={() => {
-                  this.handleItemClick("donera");
-                }}
-              >
-                <NavButton isActive={this.state.selectedNav === "donera"}>
-                  Donera
-                </NavButton>
-              </Link>
+              {this.getLinks().map((link, index) => (
+                <Link
+                  onClick={() => {
+                    this.handleItemClick(link.linkTo);
+                  }}
+                  to={link.linkTo}
+                  key={index}
+                >
+                  <NavButton
+                    isActive={link.isActive}
+                    logo={link.type === "logo"}
+                  >
+                    {link.content}
+                  </NavButton>
+                </Link>
+              ))}
             </Navbar>
             <div
               className="content-area"
