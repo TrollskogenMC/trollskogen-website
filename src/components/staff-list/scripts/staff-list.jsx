@@ -29,17 +29,6 @@ export default function StaffList() {
         Philip2096
         <br /> Admin
       </div>
-      <div className="staff-member">
-        <img
-          className="staff-img"
-          src={mistresslilith}
-          width="75px"
-          height="75px"
-          alt="mistresslilith"
-        />
-        mistresslilith
-        <br /> Moderator
-      </div>
     </div>
   );
 }

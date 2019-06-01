@@ -1,0 +1,24 @@
+.info-box-container {
+    max-width: 100%;
+    width: 25em;
+    margin: auto;
+    padding: .5em 0;
+}
+
+.info-box-header {
+    background-color: #41924B;
+    color: #fdfdfd;
+    height: 2.5em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+}
+
+.info-box-body {
+    padding: .5em 1em;
+    border-right: #ccc solid;
+    border-left: #ccc solid;
+    border-bottom: #ccc solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
