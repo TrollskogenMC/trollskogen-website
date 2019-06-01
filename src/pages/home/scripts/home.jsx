@@ -1,30 +1,29 @@
 import React from "react";
 import "../styles/home.css";
 import StaffList from "../../../components/staff-list/scripts/staff-list";
+import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 export default function HomePage() {
   return (
     <div>
-      <div className="jumbotron">
-        <div className="decription">
-          <h1>Trollskogen - Ny svensk minecraft server</h1>
-          <p>
-            Kul att du kikar in! Trollskogen är ett nytt svenskt
-            minecraft-community som startades i februari 2019. Vi värnar om att
-            ha ett moget community och därför kommer vi att vara stränga med
-            reglerna.
-            <br />
-            <br />
-            <br />
-          </p>
-        </div>
-        <div className="server-links">
-          <span>Ip: mc.trollskogen.nu</span>
-          <span>
-            Discord:{" "}
-            <a href="https://discord.gg/wPxz8pD">https://discord.gg/wPxz8pD</a>
-          </span>
-        </div>
-      </div>
+      <Jumbotron
+        className="jumbotron-bg-home"
+        title="Trollskogen - Ny svensk minecraft server"
+        text="Kul att du kikar in! Trollskogen är ett nytt svenskt
+    minecraft-community som startades i februari 2019. Vi värnar om att
+    ha ett moget community och därför kommer vi att vara stränga med
+    reglerna."
+        linkArea={
+          <React.Fragment>
+            <span>Ip: mc.trollskogen.nu</span>
+            <span>
+              Discord:{" "}
+              <a href="https://discord.gg/wPxz8pD">
+                https://discord.gg/wPxz8pD
+              </a>
+            </span>
+          </React.Fragment>
+        }
+      />
       <div className="post-area">
         <br />
         <div className="post post-left">

@@ -33,3 +33,25 @@ body {
 .text-center {
   text-align: center;
 }
+
+.group-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fc-light-grey {
+  color: #827d7ddc;
+}
+
+.f-bold {
+  font-weight: bold;
+} 
+
+.f-normal {
+  font-weight: normal;
+}
+
+.padding {
+  padding: .25em;
+}
