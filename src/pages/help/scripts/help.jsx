@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import InfoBoxContainer from "../../../components/info-box/scripts/inf-box-container";
 import InfoBoxHeader from "../../../components/info-box/scripts/info-box-header";
 import InfoBoxInfo from "../../../components/info-box/scripts/info-box-info";
