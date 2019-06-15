@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function downIcon({ height }) {
+export default function DownIcon({ height }) {
   return (
     <svg
       height={height}

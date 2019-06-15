@@ -5,6 +5,7 @@ import Rules from "../../../pages/rules-and-terms/scripts/rules.jsx";
 import Navbar from "../../../components/navigation/scripts/navbar";
 import NavButton from "../../../components/navigation/scripts/nav-button";
 import Donera from "../../../pages/donera/scripts/donera";
+import Help from "../../../pages/help/scripts/help";
 export default function Router() {
   const [selectedNav, setSelectedNav] = useState(0);
 
@@ -38,6 +39,12 @@ export default function Router() {
         type: "button",
         linkTo: "/donera",
         isActive: selectedNav === "/donera"
+      },
+      {
+        content: "Hjälp",
+        type: "button",
+        linkTo: "/hjalp",
+        isActive: selectedNav === "/hjalp"
       }
     ];
   };
@@ -70,6 +77,7 @@ export default function Router() {
               <Route path="/" exact component={HomePage} />
               <Route path="/regler" exact component={Rules} />
               <Route path="/donera" exact component={Donera} />
+              <Route path="/hjalp" exact component={Help} />
               <Route component={notFound} />
             </Switch>
           </div>

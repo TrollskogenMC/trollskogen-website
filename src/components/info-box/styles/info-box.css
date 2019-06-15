@@ -3,6 +3,7 @@
     width: 25em;
     margin: auto;
     padding: .5em 0;
+    overflow: hidden;
 }
 
 .info-box-header {
@@ -21,4 +22,28 @@
     border-bottom: #ccc solid;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.expandable .shrunk .info-box-body {
+    border-color: #fdfdfd;
+    transition: border-color ease-in-out .8s;
+}
+
+.expandable .expandable-body.shrunk {
+    max-height: 0;
+    transition: max-height ease-in-out .5s;
+}
+
+.expandable .expandable-body.expanded {
+    max-height: 1000px;
+    transition: max-height ease-in-out .5s;
+}
+
+.expandable .shrunk .expandable-rotate {
+    transform: rotate(0);
+    transition: transform ease-in-out .4s;
+}
+.expandable .expanded .expandable-rotate {
+    transform: rotate(-180deg);
+    transition: transform ease-in-out .4s;
 }
