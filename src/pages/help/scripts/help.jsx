@@ -191,7 +191,7 @@ export default function Help() {
                 <br />
                 Om allt har gått rätt till så ska du nu ha fått ett svar från
                 Troll Zeke och du har nu ett grönt namn i discord-servern och du
-                ligger under kategorien "medlemmar".
+                ligger under kategorien "verifierad".
               </InfoBoxInfo>
             }
           />
