@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function ExpandableContainer({ headerContent, bodyContent }) {
-  const [isSelected, setSelected] = useState(0);
+  const [isSelected, setSelected] = useState(false);
 
   const toggleSelect = () => {
     setSelected(!isSelected);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import HomePage from "../../../pages/home/scripts/home.jsx";
 import Rules from "../../../pages/rules-and-terms/scripts/rules.jsx";
@@ -7,19 +7,19 @@ import NavButton from "../../../components/navigation/scripts/nav-button";
 import Donera from "../../../pages/donera/scripts/donera";
 import Help from "../../../pages/help/scripts/help";
 export default function Router() {
-  const [selectedNav, setSelectedNav] = useState(0);
+  const [selectedNav, setSelectedNav] = useState(undefined);
 
   const notFound = () => {
     return <div>Den här sidan verkar inte finnas.</div>;
   };
 
-  const handleItemClick = name => {
+  const handleItemClick = useCallback(() => {
     setSelectedNav(name);
-  };
+  }, [name]);
 
   useEffect(() => {
     setSelectedNav(window.location.pathname);
-  });
+  }, []);
 
   const getLinks = () => {
     return [
@@ -59,7 +59,7 @@ export default function Router() {
                   handleItemClick(link.linkTo);
                 }}
                 to={link.linkTo}
-                key={index}
+                key={link.linkTo}
               >
                 <NavButton isActive={link.isActive} logo={link.type === "logo"}>
                   {link.content}
