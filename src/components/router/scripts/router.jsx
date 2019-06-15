@@ -13,9 +13,9 @@ export default function Router() {
     return <div>Den här sidan verkar inte finnas.</div>;
   };
 
-  const handleItemClick = useCallback(() => {
+  const handleItemClick = name => {
     setSelectedNav(name);
-  }, [name]);
+  };
 
   useEffect(() => {
     setSelectedNav(window.location.pathname);
