@@ -40,6 +40,7 @@
     margin-bottom: 2em;
     align-self: center;
     justify-items: flex-end;
+    font-size: 22px;
 }
 
 .server-links span + span {

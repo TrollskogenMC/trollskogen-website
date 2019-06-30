@@ -15,12 +15,6 @@ export default function HomePage() {
         linkArea={
           <React.Fragment>
             <span>Ip: mc.trollskogen.nu</span>
-            <span>
-              Discord:{" "}
-              <a href="https://discord.gg/wPxz8pD">
-                https://discord.gg/wPxz8pD
-              </a>
-            </span>
           </React.Fragment>
         }
       />
