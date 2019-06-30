@@ -92,13 +92,12 @@ export default function Help() {
             bodyContent={
               <InfoBoxInfo>
                 Sugen på att skapa en stad med dina vänner på servern, eller
-                vill du bara skydda ditt hem? Då är det bara att skapa en stad.{" "}
+                vill du bara skydda ditt hem? Då kan du skapa en stad. <br />
                 <br />
-                <br />
-                Vi rekomenderar att gå ihop ett gäng om inte du som spelare har
-                lyckats samla ihhop tillräckligt med pengar, det är också
-                viktigt att ha en stadig inkomst eftersom att det kostar minst
-                10 trollmynt per dag att ha en stad.
+                Vi rekomenderar att gå ihop ett gäng om du ensam inte har
+                tillräckligt med pengar, det är också viktigt att ha en stadig
+                inkomst eftersom att det kostar minst 10 trollmynt per dag att
+                ha en stad.
                 <h3>Kommandon:</h3>
                 <div className="group-list">
                   <ul className="fc-light-grey">
@@ -183,7 +182,7 @@ export default function Help() {
                 du ska verifiera dig på servern.
                 <br />
                 <br />
-                Leta upp BOT:en "Troll Zeke" i medlemslistan på discor-servern
+                Leta upp BOT:en "Troll Zeke" i medlemslistan på discord-servern
                 och skicka ett privat meddelande till honom med texten: "verify
                 [bokstavs- och siffer-kombinationen du fick i
                 minecraft-chatten]".

@@ -31,7 +31,7 @@
     font-size: 32px;
 }
 .decription {
-    margin: 1em 2em 0 2em;
+    margin: 1em 2em 0 3em;
     overflow: wrap;
     flex-grow: 1;
 }
