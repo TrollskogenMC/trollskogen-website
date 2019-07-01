@@ -46,6 +46,12 @@ export default function Router() {
         type: "button",
         linkTo: "/hjalp",
         isActive: selectedNav === "/hjalp"
+      },
+      {
+        content: "Racing",
+        type: "button",
+        linkTo: "/racing",
+        isActive: selectedNav === "/racing"
       }
     ];
   };
