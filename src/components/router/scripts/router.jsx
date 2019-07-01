@@ -6,6 +6,7 @@ import Navbar from "../../../components/navigation/scripts/navbar";
 import NavButton from "../../../components/navigation/scripts/nav-button";
 import Donera from "../../../pages/donera/scripts/donera";
 import Help from "../../../pages/help/scripts/help";
+import Racing from "../../../pages/racing/scripts/racing";
 export default function Router() {
   const [selectedNav, setSelectedNav] = useState(undefined);
 
@@ -45,6 +46,12 @@ export default function Router() {
         type: "button",
         linkTo: "/hjalp",
         isActive: selectedNav === "/hjalp"
+      },
+      {
+        content: "Racing",
+        type: "button",
+        linkTo: "/racing",
+        isActive: selectedNav === "/racing"
       }
     ];
   };
@@ -78,6 +85,7 @@ export default function Router() {
               <Route path="/regler" exact component={Rules} />
               <Route path="/donera" exact component={Donera} />
               <Route path="/hjalp" exact component={Help} />
+              <Route path="/racing" exact component={Racing} />
               <Route component={notFound} />
             </Switch>
           </div>
