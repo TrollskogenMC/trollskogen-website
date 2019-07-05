@@ -3,7 +3,7 @@ import axios from "axios";
 export default function Racing() {
   const getRaces = () => {
     axios
-      .get("http://api.trollskogen.nu/users", { crossdomain: true })
+      .get("https://api.trollskogen.nu/users", { crossdomain: true })
       .then(response => {
         console.log(response);
         return "success";
