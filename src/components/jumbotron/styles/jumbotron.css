@@ -8,7 +8,6 @@
     overflow: hidden;
     z-index: 1; 
 }
-
 .jumbotron-bg-home {
     background: url("../images/trollskogen-home.jpg");
     background-position: center;
@@ -18,6 +17,13 @@
 
 .jumbotron-bg-donate {
     background: url("../images/trollskogen-donate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron-bg-racing {
+    background: url("../images/trollskogen-racing.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
