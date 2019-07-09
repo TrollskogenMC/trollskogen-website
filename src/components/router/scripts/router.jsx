@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import HomePage from "../../../pages/home/scripts/home.jsx";
 import Rules from "../../../pages/rules-and-terms/scripts/rules.jsx";
@@ -25,11 +25,6 @@ export default function Router() {
   const getLinks = () => {
     return [
       {
-        content: "Trollskogen",
-        type: "logo",
-        linkTo: "/"
-      },
-      {
         content: "Regler",
         type: "button",
         linkTo: "/regler",
@@ -54,19 +49,33 @@ export default function Router() {
       <BrowserRouter>
         <div>
           <Navbar>
-            {getLinks().map((link, index) => (
-              <Link
-                onClick={() => {
-                  handleItemClick(link.linkTo);
-                }}
-                to={link.linkTo}
-                key={link.linkTo}
-              >
-                <NavButton isActive={link.isActive} logo={link.type === "logo"}>
-                  {link.content}
-                </NavButton>
-              </Link>
-            ))}
+            <Link
+              onClick={() => {
+                handleItemClick("/");
+              }}
+              to={"/"}
+              key={"/"}
+            >
+              <NavButton logo={true}>Trollskogen</NavButton>
+            </Link>
+            <div className="navbar-scorllable-section">
+              {getLinks().map((link, index) => (
+                <Link
+                  onClick={() => {
+                    handleItemClick(link.linkTo);
+                  }}
+                  to={link.linkTo}
+                  key={link.linkTo}
+                >
+                  <NavButton
+                    isActive={link.isActive}
+                    logo={link.type === "logo"}
+                  >
+                    {link.content}
+                  </NavButton>
+                </Link>
+              ))}
+            </div>
           </Navbar>
           <div
             className="content-area"
