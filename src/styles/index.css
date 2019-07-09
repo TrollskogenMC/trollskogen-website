@@ -63,3 +63,7 @@ body {
 .margin-right-2 {
   margin-right: .5em;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}

@@ -1,0 +1,15 @@
+.racing-content {
+    padding-top: 4em;
+}
+
+.race-list {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.race-list li {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 25px;
+}
