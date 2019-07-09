@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import InfoBoxContainer from "../../../components/info-box/scripts/inf-box-container";
-import InfoBoxHeader from "../../../components/info-box/scripts/info-box-header";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 import "../styles/racing.css";
 
@@ -21,6 +19,10 @@ export default function Racing() {
       });
   };
 
+  const removeDisabled = races => {
+    return races.filter(race => race.is_enabled === true);
+  };
+
   const raceTypeObject = {
     player: "spring-race",
     elytra: "elytra-race",
@@ -31,7 +33,7 @@ export default function Racing() {
 
   useEffect(() => {
     fetchRaces((response, error) => {
-      if (response) setRaces(response);
+      if (response) setRaces(removeDisabled(response));
       else console.log("Error", error);
     });
   }, []);
