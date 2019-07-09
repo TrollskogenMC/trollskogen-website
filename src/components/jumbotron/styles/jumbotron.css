@@ -23,6 +23,13 @@
     background-size: cover;
 }
 
+.jumbotron-bg-racing {
+    background: url("../images/trollskogen-racing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .jumbotron a {
     color: #fdfdfd;
 }
