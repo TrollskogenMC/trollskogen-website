@@ -10,15 +10,6 @@ export default function Racing() {
   const [hasFetched, setHasFetched] = useState(false);
   const fetchRaces = callback => {
     axios
-<<<<<<< HEAD
-      .get("https://api.trollskogen.nu/users", { crossdomain: true })
-      .then(response => {
-        console.log(response);
-        return "success";
-      })
-      .catch(err => {
-        console.log(err);
-=======
       .get("https://api.trollskogen.nu/races")
       .then(response => {
         setHasFetched(true);
@@ -27,7 +18,6 @@ export default function Racing() {
       .catch(err => {
         setHasFetched(true);
         callback(undefined, err);
->>>>>>> added new racing page and fixed and added scroll for touch devices for the navbar
       });
   };
 
