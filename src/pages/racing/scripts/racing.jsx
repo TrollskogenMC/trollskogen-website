@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
+import Ripple from "../../../components/loading/scripts/ripple.jsx";
 import "../styles/racing.css";
 
 export default function Racing() {
@@ -23,14 +24,6 @@ export default function Racing() {
     return races.filter(race => race.is_enabled === true);
   };
 
-  const raceTypeObject = {
-    player: "spring-race",
-    elytra: "elytra-race",
-    horse: "häst-race",
-    boat: "båt",
-    pig: "gris"
-  };
-
   useEffect(() => {
     fetchRaces((response, error) => {
       if (response) setRaces(removeDisabled(response));
@@ -41,7 +34,8 @@ export default function Racing() {
   const renderRace = race => {
     return (
       <li key={race.name} className="capitalize race-list-item">
-        {`${race.name} (${raceTypeObject[race.type]})`}
+        <span className={`race-icon race-icon-${race.type}`} />
+        <span className="race-text">{`${race.name}`}</span>
       </li>
     );
   };
@@ -72,8 +66,14 @@ export default function Racing() {
           <div className="group-list">
             <ul className="race-list">{races.map(race => renderRace(race))}</ul>
           </div>
+        ) : !hasFetched ? (
+          <div>
+            <Ripple />
+          </div>
         ) : (
-          <div>Något gick fel..</div>
+          <div className="fc-light-grey">
+            Tekniskt fel, vi kunde inte ladda in races..
+          </div>
         )}
       </div>
     </div>
