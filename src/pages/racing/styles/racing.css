@@ -4,12 +4,59 @@
 
 .race-list {
     display: inline-flex;
-    flex-direction: column;
-    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .race-list li {
+    border-radius: 7px;
     text-overflow: ellipsis;
-    overflow: hidden;
-    height: 25px;
+    height: 50px;
+    width: 200px;
+    padding: 0.25em;
+    background-color: #dfdfdf;
+    color: #333;
+    margin: 0.25em;
+    display: flex;
+    align-items: center
+}
+.race-text {
+    margin-left: .5em;
+}
+
+.race-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.race-icon-player {
+    background: url("../images/boots.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
+}
+
+.race-icon-pig {
+    background: url("../images/carrot_on_a_stick.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
+}
+
+.race-icon-horse {
+    background: url("../images/horse_armour.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
+}
+
+.race-icon-elytra {
+    background: url("../images/elytra.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
 }
