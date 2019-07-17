@@ -60,3 +60,9 @@
     background-size: cover;
     margin-left: 0.5em;
 }
+
+@media only screen and (max-width: 600px) {
+    .race-list li {
+        width: 100%;
+    }
+}
