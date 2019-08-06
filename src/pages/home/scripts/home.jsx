@@ -22,21 +22,19 @@ export default function HomePage() {
       <div className="post-area">
         <div className="post post-left">
           <hr />
-          <h2 className="post-title">Om 1.14</h2>
+          <h2 className="post-title">
+            Nu är det dag att uppdattera till 1.14!
+          </h2>
           <p className="post-text">
-            Vi känner äntligen att det är dags att uppdattera servern nu när de
-            nödvändigaste pluginsen är uppdatterade och när mojang och Spigot
-            har släppt en stabil uppdattering.
+            Med uppdateringen så kommer ett gängg nya funktioner till servern,
+            förutom alla nya vannilla funktionerna så har vi passat på att
+            uppdatera mcMMO, lagt till vårt nya plugin "racing".
             <br />
             <br />
-            En nyhet för servern är vårt egna plugin "Racing", vår förhoppning
-            är att vi ska använda det som ett enkelt sätt att skapa events och
-            för att ge er utmaningar på servern. Pluginet uppdatteras löpande
-            med nya funktioner, så håll utkik här och på vår discord-server!
-            <br />
-            <br />
-            Något annat som vi kommer att testa är ett <b>dubbel xp-event </b>
-            för mcmmo under första helgen som vi har 1.14.
+            För att fira att 1.14 äntligen har kommit till Trollskogen så slår
+            vi på <b>dubbel xp-event </b>
+            för mcMMO från tisdag den 6e augusti till och med söndag 11e augusti
+            (23.59). 
           </p>
         </div>
       </div>
