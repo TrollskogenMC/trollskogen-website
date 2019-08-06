@@ -18,6 +18,28 @@ export default function HomePage() {
           </React.Fragment>
         }
       />
+
+      <div className="post-area">
+        <div className="post post-left">
+          <hr />
+          <h2 className="post-title">Om 1.14</h2>
+          <p className="post-text">
+            Vi känner äntligen att det är dags att uppdattera servern nu när de
+            nödvändigaste pluginsen är uppdatterade och när mojang och Spigot
+            har släppt en stabil uppdattering.
+            <br />
+            <br />
+            En nyhet för servern är vårt egna plugin "Racing", vår förhoppning
+            är att vi ska använda det som ett enkelt sätt att skapa events och
+            för att ge er utmaningar på servern. Pluginet uppdatteras löpande
+            med nya funktioner, så håll utkik här och på vår discord-server!
+            <br />
+            <br />
+            Något annat som vi kommer att testa är ett <b>dubbel xp-event </b>
+            för mcmmo under första helgen som vi har 1.14.
+          </p>
+        </div>
+      </div>
       <div className="post-area">
         <br />
         <div className="post post-left">
