@@ -45,7 +45,7 @@ export default function Racing() {
       <Jumbotron
         className="jumbotron-bg-racing"
         title="Racing"
-        text="Racing är ett egetutvecklat plugin som vi använder för events på servern, pluginet är skapat för att du ska kunna utmana dig och andra spelare på servern"
+        text="Racing är ett egetutvecklat plugin som vi använder för events på servern. Pluginet är skapat för att du ska kunna utmana dig och andra spelare på servern"
       />
       <div className="racing-content">
         <h2>Hur fungerar det?</h2>
