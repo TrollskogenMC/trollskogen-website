@@ -22,9 +22,7 @@ export default function HomePage() {
       <div className="post-area">
         <div className="post post-left">
           <hr />
-          <h2 className="post-title">
-            Nu är det dag att uppdattera till 1.14!
-          </h2>
+          <h2 className="post-title">Nu är det dag att uppdatera till 1.14!</h2>
           <p className="post-text">
             Med uppdateringen så kommer ett gängg nya funktioner till servern,
             förutom alla nya vannilla funktionerna så har vi passat på att
@@ -34,7 +32,7 @@ export default function HomePage() {
             För att fira att 1.14 äntligen har kommit till Trollskogen så slår
             vi på <b>dubbel xp-event </b>
             för mcMMO från tisdag den 6e augusti till och med söndag 11e augusti
-            (23.59). 
+            (23.59).
           </p>
         </div>
       </div>
