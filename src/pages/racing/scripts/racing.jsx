@@ -44,7 +44,7 @@ export default function Racing() {
     <div>
       <Jumbotron
         className="jumbotron-bg-racing"
-        title="Racing (kommer snart)"
+        title="Racing"
         text="Racing är ett egetutvecklat plugin som vi använder för events på servern, pluginet är skapat för att du ska kunna utmana dig och andra spelare på servern"
       />
       <div className="racing-content">
@@ -72,7 +72,7 @@ export default function Racing() {
           </div>
         ) : (
           <div className="fc-light-grey">
-            Tekniskt fel, vi kunde inte ladda in races..
+            Tekniskt fel, vi kunde inte ladda in races just nu..
           </div>
         )}
       </div>
