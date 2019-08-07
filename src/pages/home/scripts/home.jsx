@@ -22,7 +22,7 @@ export default function HomePage() {
       <div className="post-area">
         <div className="post post-left">
           <hr />
-          <h2 className="post-title">Nu är det dag att uppdatera till 1.14!</h2>
+          <h2 className="post-title">Nu är det dags att uppdatera till 1.14!</h2>
           <p className="post-text">
             Med uppdateringen så kommer ett gängg nya funktioner till servern,
             förutom alla nya vannilla funktionerna så har vi passat på att
