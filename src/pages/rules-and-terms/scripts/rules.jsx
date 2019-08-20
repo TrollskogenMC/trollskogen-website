@@ -20,6 +20,9 @@ export default function Rules() {
             </li>
             <li>Ingen spam eller reklam till andra servrar.</li>
             <li>
+              Inget tiggeri, men självklart är byteshandel eller gåvor okej.
+            </li>
+            <li>
               Homofobiska eller rasistiska kommentarer i chatt eller i spelet är
               inte okej. Politik är onödigt att prata om i chatten.
             </li>

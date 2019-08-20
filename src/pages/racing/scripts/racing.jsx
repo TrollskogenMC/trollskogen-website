@@ -49,18 +49,18 @@ export default function Racing() {
       />
       <div className="racing-content">
         <h2>Hur fungerar det?</h2>
-        När ett race-event startar så är det bara att klicka på texten eller
-        skriva /rc join [race-namn]. När racet har startat så är ditt mål att ta
-        dig från checkpoint(röda cirklar som du ser längs bannan) till
-        checkpoint tills du kommer i mål. <br />
+        När ett race-event startar så är det bara att klicka på texten,
+        högerklicka på en raceskylt i spawn eller skriva /rc join [race-namn].
+        När racet har startat så är ditt mål att ta dig från checkpoint(röda
+        cirklar som du ser längs bannan) till checkpoint tills du kommer i mål.{" "}
         <br />
-        Vi har fem olika typer av race, båt, elytra, gris, häst och spring. I de
-        races som du rider på något så kommer du automatiskt att sitta på djuret
-        eller båten vid racestart och du kommer inte att kunna lämna racet
-        förrens racet är slut. I elytra race så spawnar du självklart med en
-        elytra, om du vill starta om från början under racets gång så är det
-        bara att vänsterklicka eller högerklicka på din mus så teleporteras du
-        tillbaka till din startpunkt.
+        <br />
+        Vi har fem olika typer av race, båt, elytra, gris, häst och spring.
+        Självklart spawnar du med det du behöver när ett race påbörjas.
+        <br />
+        <br />
+        Med races kommer också leaderboards som du kan tävkla mot dig själv
+        eller andra med. Använd kommandot /rc top [racenamn].
         <h2>Våra race</h2>
         {hasFetched && races ? (
           <div className="group-list">
