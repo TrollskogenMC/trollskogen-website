@@ -43,10 +43,11 @@ export default function Donera() {
                 <li className="padding">/sethome(2 extra)</li>
                 <li className="padding">/ci - rensar ditt inventory</li>
                 <li className="padding">
-                  Du kan använda silk touch för att hugga ner spawners
+                  Du får ett guldigt namn i vår discord server
                 </li>
                 <li className="padding">
-                  Du får ett guldigt namn i vår discord server
+                  Vi arbetar just nu på fler kosmetiska effekter och fler
+                  bekvämligheter, mer info kommer när det är redo.
                 </li>
               </ul>
             </div>
