@@ -229,7 +229,7 @@ export default function Help() {
                   <li className="padding">
                     /phome [spelare] [hem] Gå hem till en spelare. Kommandot
                     autocompletas med spelare som har öppna hem. Du kan se vilka
-                    av vilka av dina hem är öppna med
+                    av dina hem är öppna med /homes
                   </li>
                 </ul>
               </InfoBoxInfo>
