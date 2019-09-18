@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url("https://fonts.googleapis.com/css?family=Cabin");
 #main {
   max-width: 920px;
- }
-html, body, #root {
+}
+html,
+body,
+#root {
   width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   background-color: #fdfdfd;
 }
 
@@ -18,9 +20,8 @@ html, body, #root {
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,20 +49,24 @@ body {
   color: #827d7ddc;
 }
 
+.fc-light-red {
+  color: #ff3333;
+}
+
 .f-bold {
   font-weight: bold;
-} 
+}
 
 .f-normal {
   font-weight: normal;
 }
 
 .padding {
-  padding: .25em;
+  padding: 0.25em;
 }
 
 .margin-right-2 {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .capitalize {

@@ -35,9 +35,6 @@ export default function Donera() {
                   /top - tar dig till den högsta platsen ovanför dig
                 </li>
                 <li className="padding">
-                  /effects - få en animation som roterar runt ditt huvud
-                </li>
-                <li className="padding">
                   /tpa /tpahere - teleportera dig till en vän eller den till dig
                 </li>
                 <li className="padding">/sethome(2 extra)</li>

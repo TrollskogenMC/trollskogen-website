@@ -142,7 +142,9 @@ export default function Help() {
                       ett extra om du verifierar dig på vår discord server.
                     </li>
                     <li className="padding">
-                      /home [namn] - teleportera dig till ett av dina hem.
+                      /home [namn] - teleportera dig till ett av dina hem. (Se
+                      Öppna hem för info om hur man öppnar sitt hem för andra
+                      spelare)
                     </li>
                   </ul>
                 </div>
@@ -191,6 +193,45 @@ export default function Help() {
                 Om allt har gått rätt till så ska du nu ha fått ett svar från
                 Troll Zeke och du har nu ett grönt namn i discord-servern och du
                 ligger under kategorien "verifierad".
+              </InfoBoxInfo>
+            }
+          />
+        </InfoBoxContainer>
+
+        <InfoBoxContainer expandable>
+          <ExpandableContainer
+            headerContent={
+              <InfoBoxHeader className="text-center">
+                <div className="donate-info-text">
+                  <span className="fc-light-red">Nyhet!</span> Öppna ditt hem
+                  <span
+                    style={{ width: "25px" }}
+                    className="float-right margin-right-2 expandable-rotate"
+                  >
+                    <DownIcon height="25" />
+                  </span>
+                </div>
+              </InfoBoxHeader>
+            }
+            bodyContent={
+              <InfoBoxInfo>
+                Nu kan man öppna ett av sina hem så att vem som helst kan komma
+                hem till dig. <br />
+                Alla kan öppna sina hem så det är inte exklusivt för VIP. Man
+                kan bara öppna 1 av sina hem just nu. Bra när man spelar med
+                vänner som man vill dela sitt hem med eller om man vill bedriva
+                gårdsförsäljning. <br />
+                Bannade spelares öppna hem kommer man inte kunna gå till. <br />
+                Nya kommandon är:
+                <ul className="fc-light-grey">
+                  <li className="padding">/openhome [hem] Öppna ditt hem</li>
+                  <li className="padding">/closehome [hem] Stäng ditt hem</li>
+                  <li className="padding">
+                    /phome [spelare] [hem] Gå hem till en spelare. Kommandot
+                    autocompletas med spelare som har öppna hem. Du kan se vilka
+                    av vilka av dina hem är öppna med
+                  </li>
+                </ul>
               </InfoBoxInfo>
             }
           />
