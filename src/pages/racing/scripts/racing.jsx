@@ -62,7 +62,7 @@ export default function Racing() {
         Med races kommer också leaderboards som du kan tävkla mot dig själv
         eller andra med. Använd kommandot /rc top [racenamn].
         <h2>Våra race</h2>
-        {hasFetched && races ? (
+        {hasFetched && races && races.length > 0 ? (
           <div className="group-list">
             <ul className="race-list">{races.map(race => renderRace(race))}</ul>
           </div>
