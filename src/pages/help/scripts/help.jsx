@@ -231,6 +231,10 @@ export default function Help() {
                     autocompletas med spelare som har öppna hem. Du kan se vilka
                     av dina hem är öppna med /homes
                   </li>
+                  <li className="padding">
+                    /togglehomecmds stänger av kommandon som /sethome, /tpahere
+                    och /tpaccept
+                  </li>
                 </ul>
               </InfoBoxInfo>
             }

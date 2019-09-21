@@ -18,7 +18,7 @@ export default function Banned() {
         <br />
         <br />
         Beroende på allvarsgrad kan du få en varning, temporär bannlysning eller
-        parmanent bannlysning. Parmanenta bannlysningar kommer inte att lyftas
+        permanent bannlysning. Permanent bannlysningar kommer inte att lyftas
         på, men de andra straffen kan du göra en appeal för på
         trollskogenmc@gmail.com.
       </div>
