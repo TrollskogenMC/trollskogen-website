@@ -30,6 +30,15 @@ export default function HomePage() {
             <b>Lwc</b>, <b>towny</b> och <b>chestshops</b>. På trollskogen har
             vi nolltollerans mot griefing, fusk och trakasserier och vi är hårda
             med att alla ska följa de regler vi har satt upp.
+            <br />
+            <br />
+            På trollskogen kör vi på en svårare svårighetsgrad(hard), man får
+            inte mycket gratisitems och vi har stängt av hp-regenerering i
+            nether, allt för att göra minecraft lite mer utmanande!
+            <br /> <br />
+            Självklart trivs du som gillar lugn och ro och bara vill bygga i
+            fred också! Då kan du gå med i en av våra towny städer, eller skapa
+            en själv, i dessa kan man stänga av monster.
           </p>
         </div>
         <div className="post post-right post-staff-area">

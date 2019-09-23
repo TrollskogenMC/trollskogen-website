@@ -27,7 +27,7 @@ body {
 }
 
 .content-area {
-  margin: 4em 2em 0 2em;
+  margin: 4em 4em 0;
   padding-bottom: 2em;
 }
 
@@ -71,4 +71,10 @@ body {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content-area {
+    margin: 4em 16em 0;
+  }
 }

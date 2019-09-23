@@ -1,55 +1,61 @@
 .jumbotron {
-    display: flex;
-    flex-direction: column;
-    margin: -2em -4em;
-    min-height: 500px;
-    color: #fdfdfd;
-    box-shadow: inset -4px 3px 7px 5px #111, inset 0 0 0.4em;
-    overflow: hidden;
-    z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  margin: -2em -4em;
+  min-height: 500px;
+  color: #fdfdfd;
+  box-shadow: inset -4px 3px 7px 5px #111, inset 0 0 0.4em;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .jumbotron-bg-home {
-    background: url("../images/trollskogen-home.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url("../images/trollskogen-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron-bg-donate {
-    background: url("../images/trollskogen-donate.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url("../images/trollskogen-donate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron-bg-racing {
-    background: url("../images/trollskogen-racing.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url("../images/trollskogen-racing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron a {
-    color: #fdfdfd;
+  color: #fdfdfd;
 }
 
 .jumbotron h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 .decription {
-    margin: 1em 2em 0 3em;
-    overflow: wrap;
-    flex-grow: 1;
+  margin: 1em 2em 0 3em;
+  overflow: wrap;
+  flex-grow: 1;
 }
 
 .server-links {
-    margin-bottom: 2em;
-    align-self: center;
-    justify-items: flex-end;
-    font-size: 22px;
+  margin-bottom: 2em;
+  align-self: center;
+  justify-items: flex-end;
+  font-size: 22px;
 }
 
-.server-links span + span {
-    margin-left: 1em;
+@media only screen and (min-width: 1024px) {
+  .jumbotron {
+    margin: -2em -17em;
+  }
+
+  .decription {
+    margin: 2em 16em 0;
+  }
 }
