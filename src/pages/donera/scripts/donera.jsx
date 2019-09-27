@@ -43,13 +43,14 @@ export default function Donera() {
                   Du får ett guldigt namn i vår discord server
                 </li>
                 <li className="padding">
-                  Vi arbetar just nu på fler kosmetiska effekter och fler
-                  bekvämligheter, mer info kommer när det är redo.
+                  Tillgång till /trail set - en kosmetisk effekt
                 </li>
               </ul>
             </div>
           </InfoBoxInfo>
         </InfoBoxContainer>
+        Vi arbetar löpande med att skapa nya plugin som kan användas av er
+        donatorer som ett tack för att ni hjälper till att finansiera servern!
       </div>
     </div>
   );
