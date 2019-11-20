@@ -1,12 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/home.css";
 import StaffList from "../../../components/staff-list/scripts/staff-list";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 export default function HomePage() {
+  const [imageList, setImageList] = useState([]);
+  const [currentImageId, setCurrentImageId] = useState(null);
+  useEffect(() => {
+    changeImageList(
+      shuffle([
+        "jumbotron-bg-home",
+        "jumbotron-bg-donate",
+        "jumbotron-bg-racing"
+      ])
+    );
+    setInterval(changeImageId, 5000);
+  }, []);
+
+  const changeImageList = list => {
+    setImageList(list);
+  };
+
+  const changeImageId = () => {
+    if (!currentImageId) setCurrentImageId(0);
+    else setCurrentImageId(currentImageId + 1);
+  };
+
+  const shuffle = a => {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+    }
+    return a;
+  };
+
   return (
     <div>
       <Jumbotron
-        className="jumbotron-bg-home"
+        className={imageList[currentImageId]}
         title="Trollskogen - Svensk minecraft server 1.14"
         text="Kul att du kikar in! Trollskogen är ett nytt svenskt
     minecraft-community som startades i februari 2019. Vi värnar om att
