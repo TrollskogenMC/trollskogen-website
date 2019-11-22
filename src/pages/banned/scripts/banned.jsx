@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 import "../styles/banned.css";
 
 export default function Banned() {
+  const [bannedList, setBannedList] = useState([]);
+  const [hasFetched, setHasFetched] = useState(false);
   return (
     <div>
       <Jumbotron
@@ -13,14 +16,10 @@ export default function Banned() {
       <div className="banned-content">
         <h2>Hur fungerar det?</h2>
         Vi har kraftfulla verktyg som loggar alla typer av aktivitet på servern,
-        vi har också verktyg för att rollbacka potentiellt grief eller annan
-        förstörelse med endast ett kommando.
+        vi har också verktyg för att återställa all förstörelse med endast ett
+        kommando.
         <br />
         <br />
-        Beroende på allvarsgrad kan du få en varning, temporär bannlysning eller
-        permanent bannlysning. Permanent bannlysningar kommer inte att lyftas
-        på, men de andra straffen kan du göra en appeal för på
-        trollskogenmc@gmail.com.
       </div>
     </div>
   );

@@ -49,8 +49,6 @@ export default function Donera() {
             </div>
           </InfoBoxInfo>
         </InfoBoxContainer>
-        Vi arbetar löpande med att skapa nya plugin som kan användas av er
-        donatorer som ett tack för att ni hjälper till att finansiera servern!
       </div>
     </div>
   );
