@@ -81,6 +81,7 @@ export default function Router() {
                   key={link.linkTo}
                 >
                   <NavButton
+                    className={`nav-button-${index}`}
                     isActive={link.isActive}
                     logo={link.type === "logo"}
                   >
