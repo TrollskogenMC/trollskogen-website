@@ -48,10 +48,10 @@ export default function Help() {
                 <br />
                 [antal]
                 <br />
-                <br />
                 [köp: sälj kostnad]
                 <br />
                 [Item]
+                <br />
                 <br />
                 philip2096
                 <br />
