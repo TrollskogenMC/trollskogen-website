@@ -65,7 +65,7 @@ export default function Banned() {
         {hasFetched && bannedList && bannedList.length > 0 ? (
           <div className="group-list">
             <ul className="ban-list">
-              <li className="capitalize ban-list-item">
+              <li className="capitalize ban-list-item ban-list-item-header">
                 <div className="ban-list-field ban-list-banned-name f-bold">
                   Användare
                 </div>
