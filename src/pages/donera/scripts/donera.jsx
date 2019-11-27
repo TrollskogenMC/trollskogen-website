@@ -4,7 +4,6 @@ import InfoBoxContainer from "../../../components/info-box/scripts/inf-box-conta
 import InfoBoxHeader from "../../../components/info-box/scripts/info-box-header";
 import InfoBoxInfo from "../../../components/info-box/scripts/info-box-info";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
-
 import "../styles/donera.css";
 
 export default function Donera() {
