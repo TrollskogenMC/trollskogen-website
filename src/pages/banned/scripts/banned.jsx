@@ -3,26 +3,52 @@ import axios from "axios";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 import "../styles/banned.css";
 import Ripple from "../../../components/loading/scripts/ripple.jsx";
-import { format, formatDistance, formatRelative, subDays } from "date-fns";
+import DownIcon from "../../../icons/down-icon.jsx";
+import ExpandableContainer from "../../../components/info-box/scripts/expandable-container";
+
+import { format } from "date-fns";
 import { sv } from "date-fns/locale";
+
 export default function Banned() {
   const [bannedList, setBannedList] = useState([]);
   const [hasFetched, setHasFetched] = useState(false);
 
+  const renderBanHeader = ban => (
+    <div className="ban-item-header-container">
+      <div className="ban-list-field ban-list-banned-name">
+        {ban.banned_user_name}
+      </div>
+      <div className="ban-list-field ban-list-expire">
+        {ban.expiry_date
+          ? format(Date.parse(ban.expiry_date), "PPPPpp", {
+              locale: sv
+            })
+          : "permanent"}
+      </div>
+      <div className="ban-list-field ban-list-more">
+        <span className="float-right margin-right-2 expandable-icon">
+          <DownIcon height="25" />
+        </span>
+      </div>
+    </div>
+  );
+
+  const renderBanBody = ban => (
+    <div className="ban-item-body">
+      <div className="ban-item-body-content">
+        <div className="padding-top">Utfärdad av: {ban.issued_user_name}</div>
+        <div>Anledning: {ban.ban_reason}</div>
+      </div>
+    </div>
+  );
+
   const renderBans = ban => {
     return (
       <li key={ban.ban_id} className="capitalize ban-list-item">
-        <div className="ban-list-field ban-list-banned-name">
-          {ban.banned_user_name}
-        </div>
-        <div className="ban-list-field ban-list-issuer-name">
-          {ban.issued_user_name}
-        </div>
-        <div className="ban-list-field ban-list-expire">
-          {ban.expiry_date
-            ? format(Date.parse(ban.expiry_date), "PPPPpp", { locale: sv })
-            : "permanent"}
-        </div>
+        <ExpandableContainer
+          headerContent={renderBanHeader(ban)}
+          bodyContent={renderBanBody(ban)}
+        />
       </li>
     );
   };
@@ -65,12 +91,9 @@ export default function Banned() {
         {hasFetched && bannedList && bannedList.length > 0 ? (
           <div className="group-list">
             <ul className="ban-list">
-              <li className="capitalize ban-list-item ban-list-item-header">
+              <li className="capitalize ban-item-header-container ban-list-item-header">
                 <div className="ban-list-field ban-list-banned-name f-bold">
                   Användare
-                </div>
-                <div className="ban-list-field ban-list-issuer-name f-bold">
-                  Utfärdades av
                 </div>
                 <div className="ban-list-field ban-list-expire f-bold">
                   Utgår
