@@ -59,8 +59,8 @@ export default function Racing() {
         Självklart spawnar du med det du behöver när ett race påbörjas.
         <br />
         <br />
-        Med races kommer också leaderboards som du kan tävkla mot dig själv
-        eller andra med. Använd kommandot /rc top [racenamn].
+        Med races kommer också leaderboards som du kan tävla mot dig själv eller
+        andra med. Använd kommandot /rc top [racenamn].
         <h2>Våra race</h2>
         {hasFetched && races && races.length > 0 ? (
           <div className="group-list">
