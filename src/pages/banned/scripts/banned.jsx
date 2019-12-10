@@ -80,7 +80,7 @@ export default function Banned() {
       <Jumbotron
         className="jumbotron-bg-home"
         title="Bannad?"
-        text="På denna server har vi regler som man måste följa, precis som på andra servrar. Om man inte kan göra det så har man inget att göra på servern."
+        text="På denna server har vi regler som man måste följa, precis som på andra servrar. Om man inte kan göra det så får man inte spela hos oss."
       />
       <div className="banned-content">
         <h2>Hur fungerar det?</h2>
