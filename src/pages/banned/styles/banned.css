@@ -15,8 +15,15 @@
   flex-basis: auto;
 }
 
+.ban-list-banned-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 30%;
+  overflow: hidden;
+}
+
 .ban-list-expire {
-  width: 50%;
+  width: 30%;
   flex-grow: 1;
 }
 

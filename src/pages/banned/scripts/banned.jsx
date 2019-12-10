@@ -36,15 +36,17 @@ export default function Banned() {
   const renderBanBody = ban => (
     <div className="ban-item-body">
       <div className="ban-item-body-content">
-        <div className="padding-top">Utfärdad av: {ban.issued_user_name}</div>
-        <div>Anledning: {ban.ban_reason}</div>
+        <div className="padding-top">
+          Utfärdad av: {ban.issued_user_name || "okänd"}
+        </div>
+        <div>Anledning: {ban.reason}</div>
       </div>
     </div>
   );
 
   const renderBans = ban => {
     return (
-      <li key={ban.ban_id} className="capitalize ban-list-item">
+      <li key={ban.id} className="capitalize ban-list-item">
         <ExpandableContainer
           headerContent={renderBanHeader(ban)}
           bodyContent={renderBanBody(ban)}
