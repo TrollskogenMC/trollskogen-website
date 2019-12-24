@@ -7,7 +7,7 @@ export default function HomePage() {
     <div>
       <Jumbotron
         className="jumbotron-bg-home"
-        title="Trollskogen - Svensk minecraft server 1.14"
+        title="Trollskogen - Svensk minecraft server 1.15"
         text="Kul att du kikar in! Trollskogen är ett nytt svenskt
     minecraft-community som startades i februari 2019. Vi värnar om att
     ha ett moget community och därför kommer vi att vara stränga med
