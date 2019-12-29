@@ -1,53 +1,57 @@
 .info-box-container {
-    max-width: 100%;
-    width: 25em;
-    margin: auto;
-    padding: .5em 0;
-    overflow: hidden;
+  max-width: 100%;
+  width: 25em;
+  margin: auto;
+  padding: 0.5em 0;
+  overflow: hidden;
 }
 
 .info-box-header {
-    background-color: #41924B;
-    color: #fdfdfd;
-    height: 2.5em;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-weight: bold;
+  background-color: #41924b;
+  color: #fdfdfd;
+  height: 2.5em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+}
+
+.info-box-header-gold {
+  background-color: #ffaa00;
 }
 
 .info-box-body {
-    padding: .5em 1em;
-    border-right: #ccc solid;
-    border-left: #ccc solid;
-    border-bottom: #ccc solid;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  padding: 0.5em 1em;
+  border-right: #ccc solid;
+  border-left: #ccc solid;
+  border-bottom: #ccc solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .expandable-rotate {
-    margin-left: -2em;
+  margin-left: -2em;
 }
 
 .expandable .shrunk .info-box-body {
-    border-color: #fdfdfd;
-    transition: border-color ease-in-out .8s;
+  border-color: #fdfdfd;
+  transition: border-color ease-in-out 0.8s;
 }
 
 .expandable .expandable-body.shrunk {
-    max-height: 0;
-    transition: max-height ease-in-out .5s;
+  max-height: 0;
+  transition: max-height ease-in-out 0.5s;
 }
 
 .expandable .expandable-body.expanded {
-    max-height: 1000px;
-    transition: max-height ease-in-out .5s;
+  max-height: 1000px;
+  transition: max-height ease-in-out 0.5s;
 }
 
 .expandable .shrunk .expandable-rotate {
-    transform: rotate(0);
-    transition: transform ease-in-out .4s;
+  transform: rotate(0);
+  transition: transform ease-in-out 0.4s;
 }
 .expandable .expanded .expandable-rotate {
-    transform: rotate(-180deg);
-    transition: transform ease-in-out .4s;
+  transform: rotate(-180deg);
+  transition: transform ease-in-out 0.4s;
 }
