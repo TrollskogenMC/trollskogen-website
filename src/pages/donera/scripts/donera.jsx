@@ -18,14 +18,16 @@ export default function Donera() {
             cosmetics, 2 extra homes och några bekväma kommandon."
         linkArea={
           <span>
-            <Button href="https://trollskogen.tebex.io">Donera här</Button>
+            <Button href="https://trollskogen.tebex.io" className="btn-gold">
+              Donera här
+            </Button>
           </span>
         }
       />
       <div className="donate-content">
         <InfoBoxContainer>
-          <InfoBoxHeader className="text-center">
-            <div className="donate-info-text">Förmåner</div>
+          <InfoBoxHeader className="text-center info-box-header-gold">
+            <div className="donate-info-text">VIP förmåner</div>
           </InfoBoxHeader>
           <InfoBoxInfo>
             <div className="group-list">
@@ -44,6 +46,7 @@ export default function Donera() {
                 <li className="padding">
                   Tillgång till /trail set - en kosmetisk effekt
                 </li>
+                <li className="padding">Möjligt att Sälja 5 saker i /ah</li>
               </ul>
             </div>
           </InfoBoxInfo>
