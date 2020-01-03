@@ -42,9 +42,9 @@ export default function Donera() {
                 </li>
                 <li className="padding">/trail - Kosmetisk effekt.</li>
                 <li className="padding">
-                  Du får också 2 extra hem med /sethome, ett guldigt namn på
-                  discord och i chatten och du kan sälja 5 saker istället för 2
-                  i /ah.
+                  Du får också 2 extra hem med /sethome, ett guldigt namn i vår
+                  discord-server och i chatten och du kan sälja 5 saker istället
+                  för 2 i /ah.
                 </li>
               </ul>
             </div>
