@@ -61,6 +61,9 @@ export default function Racing() {
         <br />
         Med races kommer också leaderboards som du kan tävla mot dig själv eller
         andra med. Använd kommandot /rc top [racenamn].
+        <h2>Belöningar</h2>
+        Om du vinner ett vanligt race eller klarar ett parkour-race så kommer du
+        att vara garanterad en "racelåda", dessa öppnas i spawn.
         {hasFetched && races && races.length > 0 ? (
           <React.Fragment>
             <h2>Våra race</h2>
