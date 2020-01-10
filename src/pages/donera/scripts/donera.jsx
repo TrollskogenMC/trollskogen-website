@@ -24,32 +24,63 @@ export default function Donera() {
           </span>
         }
       />
-      <div className="donate-content">
-        <InfoBoxContainer>
-          <InfoBoxHeader className="text-center info-box-header-gold">
-            <div className="donate-info-text">VIP förmåner</div>
-          </InfoBoxHeader>
-          <InfoBoxInfo>
-            <div className="group-list">
-              <ul className="fc-light-grey">
-                <li className="padding">/ci - Rensar ditt inventory</li>
-                <li className="padding">/hat - Ha ett block/item som hatt</li>
-                <li className="padding">
-                  /top - Tar dig till den högsta platsen ovanför dig
-                </li>
-                <li className="padding">
-                  /tpa /tpahere - Teleportera dig till en vän eller den till dig
-                </li>
-                <li className="padding">/trail - Kosmetisk effekt.</li>
-                <li className="padding">
-                  Du får också 2 extra hem med /sethome, ett guldigt namn i vår
-                  discord-server och i chatten och du kan sälja 5 saker istället
-                  för 2 i /ah.
-                </li>
-              </ul>
-            </div>
-          </InfoBoxInfo>
-        </InfoBoxContainer>
+      <div className="donations-list">
+        <div className="donate-content">
+          <InfoBoxContainer>
+            <InfoBoxHeader className="text-center info-box-header-gold">
+              <div className="donate-info-text">VIP förmåner</div>
+            </InfoBoxHeader>
+            <InfoBoxInfo>
+              <div className="group-list">
+                <ul className="fc-light-grey">
+                  <li className="padding">/ci - Rensar ditt inventory</li>
+                  <li className="padding">/hat - Ha ett block/item som hatt</li>
+                  <li className="padding">
+                    /top - Tar dig till den högsta platsen ovanför dig
+                  </li>
+                  <li className="padding">
+                    /tpa /tpahere - Teleportera dig till en vän eller den till
+                    dig
+                  </li>
+                  <li className="padding">/trail - Kosmetisk effekt.</li>
+                  <li className="padding">
+                    Du får också 2 extra hem med /sethome, ett guldigt namn i
+                    vår discord-server och i chatten och du kan sälja 5 saker
+                    istället för 2 i /ah.
+                  </li>
+                </ul>
+              </div>
+            </InfoBoxInfo>
+          </InfoBoxContainer>
+        </div>
+        <div className="donate-content">
+          <InfoBoxContainer>
+            <InfoBoxHeader className="text-center info-box-header-gold">
+              <div className="donate-info-text">VIP+ förmåner</div>
+            </InfoBoxHeader>
+            <InfoBoxInfo>
+              <div className="group-list">
+                <ul className="fc-light-grey">
+                  <li className="padding">/ci - Rensar ditt inventory</li>
+                  <li className="padding">/hat - Ha ett block/item som hatt</li>
+                  <li className="padding">
+                    /top - Tar dig till den högsta platsen ovanför dig
+                  </li>
+                  <li className="padding">
+                    /tpa /tpahere - Teleportera dig till en vän eller den till
+                    dig
+                  </li>
+                  <li className="padding">/trail - Kosmetisk effekt.</li>
+                  <li className="padding">
+                    Du får också 2 extra hem med /sethome, ett guldigt namn i
+                    vår discord-server och i chatten och du kan sälja 5 saker
+                    istället för 2 i /ah.
+                  </li>
+                </ul>
+              </div>
+            </InfoBoxInfo>
+          </InfoBoxContainer>
+        </div>
       </div>
     </div>
   );
