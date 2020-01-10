@@ -5,3 +5,18 @@
 .donate-content {
   padding-top: 4em;
 }
+
+.donations-list {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.donate-content:nth-child(even) {
+  margin-left: 1em;
+}
+
+.info-box-container {
+  margin: 0;
+}
