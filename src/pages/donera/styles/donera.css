@@ -7,10 +7,11 @@
 }
 
 .donations-list {
-  width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 
 .donate-content:nth-child(even) {
@@ -19,4 +20,22 @@
 
 .info-box-container {
   margin: 0;
+}
+
+.color-gold {
+  color: #d9b232;
+}
+
+.color-purple {
+  color: #aa00aa;
+}
+
+@media only screen and (max-width: 860px) {
+  .donations-list {
+    flex-direction: column;
+  }
+
+  .donate-content:nth-child(even) {
+    margin-left: 0;
+  }
 }

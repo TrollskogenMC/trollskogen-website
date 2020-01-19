@@ -4,6 +4,7 @@ import InfoBoxHeader from "../../../components/info-box/scripts/info-box-header"
 import InfoBoxInfo from "../../../components/info-box/scripts/info-box-info";
 import ExpandableContainer from "../../../components/info-box/scripts/expandable-container";
 import DownIcon from "../../../icons/down-icon";
+import "../styles/help.css";
 
 export default function Help() {
   return (
@@ -222,7 +223,7 @@ export default function Help() {
             headerContent={
               <InfoBoxHeader className="text-center">
                 <div className="donate-info-text">
-                  <span className="fc-light-red">Nyhet!</span> Öppna ditt hem
+                  Öppna ditt hem
                   <span
                     style={{ width: "25px" }}
                     className="float-right margin-right-2 expandable-rotate"
