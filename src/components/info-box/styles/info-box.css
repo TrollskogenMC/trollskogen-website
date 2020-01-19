@@ -19,6 +19,10 @@
   background-color: #ffaa00;
 }
 
+.info-box-header-purple {
+  background-color: #aa00aa;
+}
+
 .info-box-body {
   padding: 0.5em 1em;
   border-right: #ccc solid;
