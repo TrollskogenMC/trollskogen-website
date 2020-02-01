@@ -70,7 +70,12 @@ export default function Banned() {
 
   useEffect(() => {
     fetchBannList((response, error) => {
-      if (response) setBannedList(response);
+      if (response)
+        setBannedList(
+          response.sort((user, userTwo) => {
+            return user.user_id - userTwo.user_id;
+          })
+        );
       else console.log("Error", error);
     });
   }, []);
