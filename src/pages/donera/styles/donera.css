@@ -38,6 +38,14 @@
     align-items: center;
   }
 
+  .donate-content {
+    width: auto;
+  }
+
+  .donate-content > .info-box-container {
+    width: auto;
+  }
+
   .donate-content:nth-child(even) {
     margin-left: 0;
   }

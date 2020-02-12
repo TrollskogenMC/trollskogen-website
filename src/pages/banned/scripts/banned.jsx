@@ -75,8 +75,8 @@ export default function Banned() {
           response.sort((user, userTwo) => {
             if (user.expiry_date === null) return 1;
             if (userTwo.expiry_date === null) return -1;
-            if (user.expiry_date > userTwo.expiry_date) return 1;
-            if (user.expiry_date < userTwo.expiry_date) return -1;
+            if (user.expiry_date > userTwo.expiry_date) return -1;
+            if (user.expiry_date < userTwo.expiry_date) return 1;
             return 0;
           })
         );
