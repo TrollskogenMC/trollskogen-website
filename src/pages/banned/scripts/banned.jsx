@@ -73,7 +73,11 @@ export default function Banned() {
       if (response)
         setBannedList(
           response.sort((user, userTwo) => {
-            return user.user_id - userTwo.user_id;
+            if (user.expiry_date === null) return 1;
+            if (userTwo.expiry_date === null) return -1;
+            if (user.expiry_date > userTwo.expiry_date) return 1;
+            if (user.expiry_date < userTwo.expiry_date) return -1;
+            return 0;
           })
         );
       else console.log("Error", error);
