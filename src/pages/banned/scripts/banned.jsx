@@ -94,6 +94,11 @@ export default function Banned() {
         kommando.
         <br />
         <br />
+        Vi tar inte emot några överklagningar av bannlysningar, men om du känner
+        att du har blivit oschysst bedömd så kan du kontakta en admin på discord
+        eller in-game.
+        <br />
+        <br />
         <h2>Utfärdade bannlysningar</h2>
         {hasFetched && bannedList && bannedList.length > 0 ? (
           <div className="group-list">
