@@ -97,7 +97,7 @@ export default function Donera() {
                   </li>
                   <li className="padding">/trail - Kosmetisk effekt.</li>
                   <li className="padding">
-                    /playerskull - välj spelare till ett spelarhuvud
+                    /playerskull [namn]- ändra skin på spelarhuvuden
                   </li>
                   <li className="padding">
                     Du får också 2 extra hem med /sethome, du kan sitta på
