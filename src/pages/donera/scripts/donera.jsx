@@ -100,8 +100,12 @@ export default function Donera() {
                     /playerskull [namn]- ändra skin på spelarhuvuden
                   </li>
                   <li className="padding">
+                    Modifiera armorstands med flint för att skapa dekorationer
+                    och statyer!
+                  </li>
+                  <li className="padding">
                     Du får också 2 extra hem med /sethome, du kan sitta på
-                    mattor, slabs och stairs med högherklick. Du får ett guldigt
+                    mattor, slabs och stairs med högherklick,du får ett guldigt
                     namn i chatten och vår discord-server och du kan sälja 5
                     saker istället för 2 i /ah.
                   </li>
