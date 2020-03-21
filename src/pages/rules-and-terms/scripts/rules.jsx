@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/rules.css";
-import Button from "../../../components/button/scripts/button";
 
 export default function Rules() {
   return (
