@@ -5,6 +5,8 @@
 .donate-content {
   width: 25em;
   padding-top: 4em;
+  align-items: left;
+  flex-wrap: wrap;
 }
 
 .donations-list {
@@ -13,7 +15,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  justify-content: center;
+  justify-content: left;
 }
 
 .donate-content:nth-child(even) {
@@ -35,7 +37,6 @@
 @media only screen and (max-width: 860px) {
   .donations-list {
     flex-direction: column;
-    align-items: center;
   }
 
   .donate-content {
