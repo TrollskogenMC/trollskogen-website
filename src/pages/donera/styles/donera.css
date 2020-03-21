@@ -5,6 +5,10 @@
 .donate-content {
   width: 25em;
   padding-top: 4em;
+<<<<<<< HEAD
+=======
+  align-items: left;
+>>>>>>> readded vipplus and added discord section to rules page
   flex-wrap: wrap;
 }
 
@@ -14,7 +18,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  justify-content: center;
+  justify-content: left;
 }
 
 .donate-content:nth-child(even) {
