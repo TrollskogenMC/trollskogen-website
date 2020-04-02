@@ -1,3 +1,97 @@
 .banned-content {
   padding-top: 4em;
 }
+
+.ban-list {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ban-list-field {
+  align-self: flex-start;
+  box-sizing: border-box;
+  flex-basis: auto;
+}
+
+.ban-list-banned-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 30%;
+  overflow: hidden;
+}
+
+.ban-list-expire {
+  width: 30%;
+  flex-grow: 1;
+}
+
+.ban-list-more {
+  width: 10%;
+  align-self: center;
+}
+
+.ban-list-issuer-name {
+  width: 40%;
+}
+
+.ban-list-item {
+  overflow: hidden;
+  width: 100%;
+}
+
+.ban-list-item:nth-child(odd):not(:first-child) {
+  background-color: #afeaaa;
+}
+
+.ban-item-header-container {
+  overflow: hidden;
+  padding: 0.5em;
+  align-items: flex-start;
+  display: inline-flex;
+  flex-flow: row wrap;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.ban-list-item-header {
+  color: #fdfdfd;
+  background-color: #41924b;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.ban-item-body-content {
+  padding: 1em 0.5em;
+}
+
+.ban-list-field:not(:first-child) {
+  padding-left: 1em;
+}
+
+.shrunk .ban-item-body {
+  max-height: 0;
+  transition: max-height ease-in-out 0.5s;
+}
+.expanded .ban-item-body {
+  max-height: 1000px;
+  transition: max-height ease-in-out 0.5s;
+}
+
+.shrunk .expandable-icon {
+  transform: rotate(0);
+  transition: transform ease-in-out 0.4s;
+}
+.expanded .expandable-icon {
+  transform: rotate(-180deg);
+  transition: transform ease-in-out 0.4s;
+}
+
+@media only screen and (min-width: 1240px) {
+  .ban-list {
+    width: 60%;
+  }
+}

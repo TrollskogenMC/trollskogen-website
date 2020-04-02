@@ -1,16 +1,26 @@
 .btn {
-    color: #fdfdfd;
-    background-color: #6BCAE2;
-    padding: 6px 14px;
-    border-radius: 10px;
-    font-size: 28px;
-    min-width: 20px;
-    height: 30px;
-    text-decoration: none;
+  color: #fdfdfd;
+  background-color: #6bcae2;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 28px;
+  min-width: 20px;
+  height: 30px;
+  text-decoration: none;
 }
+
 .btn:hover {
-    background-color: #7CDBF3;
-    color: #ffffff;
-    transition: color .2s ease-in-out;
-    transition: background-color .2s ease-in-out;
+  background-color: #7cdbf3;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-gold {
+  background: #ffaa00;
+}
+
+.btn-gold:hover {
+  background: #ffb829;
 }

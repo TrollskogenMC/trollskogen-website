@@ -4,6 +4,7 @@ import InfoBoxHeader from "../../../components/info-box/scripts/info-box-header"
 import InfoBoxInfo from "../../../components/info-box/scripts/info-box-info";
 import ExpandableContainer from "../../../components/info-box/scripts/expandable-container";
 import DownIcon from "../../../icons/down-icon";
+import "../styles/help.css";
 
 export default function Help() {
   return (
@@ -48,18 +49,18 @@ export default function Help() {
                 <br />
                 [antal]
                 <br />
-                [Item]
-                <br />
                 [köp: sälj kostnad]
+                <br />
+                [Item]
                 <br />
                 <br />
                 philip2096
                 <br />
                 64
                 <br />
-                Diamond
-                <br />
                 B:10 S:20 - där b står för buy och S för sell
+                <br />
+                Diamond
                 <h3>Kommandon:</h3>
                 <div className="group-list">
                   <ul className="fc-light-grey">
@@ -73,7 +74,6 @@ export default function Help() {
             }
           />
         </InfoBoxContainer>
-
         <InfoBoxContainer expandable>
           <ExpandableContainer
             headerContent={
@@ -146,6 +146,27 @@ export default function Help() {
                       Öppna hem för info om hur man öppnar sitt hem för andra
                       spelare)
                     </li>
+                    <li className="padding">
+                      /cpublic - ger andra spelare tillgång till en låst kista,
+                      dörr eller annat.
+                    </li>
+                    <li className="padding">
+                      /cprivate - sätt ett lås på en kista, dörr eller annat.
+                    </li>
+                    <li className="padding">
+                      /cremove - ta bort ett lås på en kista, dörr eller annat.
+                    </li>
+                    <li className="padding">
+                      /credstone off/on - tillåt redstonesignaler på låsta
+                      dörrar, hoppers eller annat. annat.
+                    </li>
+                    <li className="padding">
+                      /cmodify [spelarnamn] - tillåt en annan spelare att komma
+                      åt kistan.
+                    </li>
+                    <li className="padding">
+                      /ah för att komma åt serverns auctionhouse
+                    </li>
                   </ul>
                 </div>
               </InfoBoxInfo>
@@ -197,13 +218,12 @@ export default function Help() {
             }
           />
         </InfoBoxContainer>
-
         <InfoBoxContainer expandable>
           <ExpandableContainer
             headerContent={
               <InfoBoxHeader className="text-center">
                 <div className="donate-info-text">
-                  <span className="fc-light-red">Nyhet!</span> Öppna ditt hem
+                  Öppna ditt hem
                   <span
                     style={{ width: "25px" }}
                     className="float-right margin-right-2 expandable-rotate"

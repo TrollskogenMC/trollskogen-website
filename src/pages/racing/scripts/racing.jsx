@@ -59,22 +59,25 @@ export default function Racing() {
         Självklart spawnar du med det du behöver när ett race påbörjas.
         <br />
         <br />
-        Med races kommer också leaderboards som du kan tävkla mot dig själv
-        eller andra med. Använd kommandot /rc top [racenamn].
-        <h2>Våra race</h2>
+        Med races kommer också leaderboards som du kan tävla mot dig själv eller
+        andra med. Använd kommandot /rc top [racenamn].
+        <h2>Belöningar</h2>
+        Om du vinner ett vanligt race eller klarar ett parkour-race så kommer du
+        att vara garanterad en "racelåda", dessa öppnas i spawn.
         {hasFetched && races && races.length > 0 ? (
-          <div className="group-list">
-            <ul className="race-list">{races.map(race => renderRace(race))}</ul>
-          </div>
+          <React.Fragment>
+            <h2>Våra race</h2>
+            <div className="group-list">
+              <ul className="race-list">
+                {races.map(race => renderRace(race))}
+              </ul>
+            </div>
+          </React.Fragment>
         ) : !hasFetched ? (
           <div>
             <Ripple />
           </div>
-        ) : (
-          <div className="fc-light-grey">
-            Tekniskt fel, vi kunde inte ladda in races just nu..
-          </div>
-        )}
+        ) : null}
       </div>
     </div>
   );

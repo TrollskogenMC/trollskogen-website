@@ -9,7 +9,8 @@ export default function Rules() {
         Se till att läsa reglerna noggrant och fråga någon i staff på Discord
         eller på servern om något är otydligt.
       </p>
-      <ul className="server-rules">
+      <h3>Server-regler</h3>
+      <ul className="server-rules" id="server">
         <ol>
           <li>Håll en trevlig ton</li>
           <ol type="a">
@@ -84,6 +85,16 @@ export default function Rules() {
             Att använda flera konton på servern är inte okej, det ger ett
             oschysst övertag på servern.
           </li>
+        </ol>
+      </ul>
+
+      <h3>Discord-regler</h3>
+      <ul className="server-rules" id="discord">
+        <ol>
+          <li>Håll en trevlig ton</li>
+          <li>Ingen voice-changer</li>
+          <li>Inget spam</li>
+          <li>Ingen reklam</li>
         </ol>
       </ul>
     </div>
