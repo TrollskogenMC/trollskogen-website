@@ -8,20 +8,32 @@ export default function HomePage() {
   useEffect(() => {
     changeImageList(
       shuffle([
-        "jumbotron-bg-home",
-        "jumbotron-bg-donate",
-        "jumbotron-bg-racing"
+        "jumbotron-bg-anim1",
+        "jumbotron-bg-anim3",
+        "jumbotron-bg-anim4",
+        "jumbotron-bg-anim5",
+        "jumbotron-bg-anim6",
+        "jumbotron-bg-anim7",
+        "jumbotron-bg-anim8",
+        "jumbotron-bg-anim9",
+        "jumbotron-bg-anim10",
+        "jumbotron-bg-anim11",
+        "jumbotron-bg-anim12"
       ])
     );
-    setInterval(changeImageId, 5000);
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(changeImageId, 4500);
+    return () => clearInterval(interval);
+  });
 
   const changeImageList = list => {
     setImageList(list);
   };
 
   const changeImageId = () => {
-    if (!currentImageId) setCurrentImageId(0);
+    if (imageList.length - 1 === currentImageId) setCurrentImageId(0);
     else setCurrentImageId(currentImageId + 1);
   };
 
@@ -39,7 +51,8 @@ export default function HomePage() {
   return (
     <div>
       <Jumbotron
-        className={imageList[currentImageId]}
+        className={`${imageList[currentImageId] ||
+          "jumbotron-bg-anim1"} jumbotron-animate`}
         title="Trollskogen - Svensk minecraft server 1.15"
         text="Kul att du kikar in! Trollskogen är ett nytt svenskt
     minecraft-community som startades i februari 2019. Vi värnar om att
