@@ -1,12 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/home.css";
 import StaffList from "../../../components/staff-list/scripts/staff-list";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 export default function HomePage() {
+  const [imageList, setImageList] = useState([]);
+  const [currentImageId, setCurrentImageId] = useState(null);
+  useEffect(() => {
+    changeImageList(
+      shuffle([
+        "jumbotron-bg-anim1",
+        "jumbotron-bg-anim3",
+        "jumbotron-bg-anim4",
+        "jumbotron-bg-anim5",
+        "jumbotron-bg-anim6",
+        "jumbotron-bg-anim7",
+        "jumbotron-bg-anim8",
+        "jumbotron-bg-anim9",
+        "jumbotron-bg-anim10",
+        "jumbotron-bg-anim11",
+        "jumbotron-bg-anim12"
+      ])
+    );
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(changeImageId, 4500);
+    return () => clearInterval(interval);
+  });
+
+  const changeImageList = list => {
+    setImageList(list);
+  };
+
+  const changeImageId = () => {
+    if (imageList.length - 1 === currentImageId) setCurrentImageId(0);
+    else setCurrentImageId(currentImageId + 1);
+  };
+
+  const shuffle = a => {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+    }
+    return a;
+  };
+
   return (
     <div>
       <Jumbotron
-        className="jumbotron-bg-home"
+        className={`${imageList[currentImageId] ||
+          "jumbotron-bg-anim1"} jumbotron-animate`}
         title="Trollskogen - Svensk minecraft server 1.15"
         text="Kul att du kikar in! Trollskogen är ett nytt svenskt
     minecraft-community som startades i februari 2019. Vi värnar om att

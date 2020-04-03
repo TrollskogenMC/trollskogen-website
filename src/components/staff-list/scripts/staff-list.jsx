@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/staff.css";
 import philip from "../images/philip2096.png";
 import hornta from "../images/hornta.png";
+import opaso from "../images/opaso.png";
 
 export default function StaffList() {
   return (
@@ -15,7 +16,7 @@ export default function StaffList() {
           alt="hornta"
         />
         hornta
-        <br /> Admin
+        <br /> Ägare
       </div>
       <div className="staff-member">
         <img
@@ -27,6 +28,17 @@ export default function StaffList() {
         />
         Philip2096
         <br /> Admin
+      </div>
+      <div className="staff-member">
+        <img
+          className="staff-img"
+          src={opaso}
+          width="75px"
+          height="75px"
+          alt="opaso"
+        />
+        opaso
+        <br /> Moderator
       </div>
     </div>
   );
