@@ -8,6 +8,108 @@
   overflow: hidden;
   z-index: 1;
 }
+.jumbotron-animate {
+  transition: background 0.5s ease-in-out;
+}
+
+.jumbotron-animate::after {
+  content: url("../images/trollskogen-anim1.jpg")
+    url("../images/trollskogen-anim3.jpg")
+    url("../images/trollskogen-anim4.jpg")
+    url("../images/trollskogen-anim5.jpg")
+    url("../images/trollskogen-anim6.jpg")
+    url("../images/trollskogen-anim7.jpg")
+    url("../images/trollskogen-anim8.jpg")
+    url("../images/trollskogen-anim9.jpg")
+    url("../images/trollskogen-anim10.jpg")
+    url("../images/trollskogen-anim11.jpg")
+    url("../images/trollskogen-anim12.jpg");
+  display: none;
+}
+
+.jumbotron-bg-anim1 {
+  background: url("../images/trollskogen-anim1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim3 {
+  background: url("../images/trollskogen-anim3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim4 {
+  background: url("../images/trollskogen-anim4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim5 {
+  background: url("../images/trollskogen-anim5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim6 {
+  background: url("../images/trollskogen-anim1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim7 {
+  background: url("../images/trollskogen-anim7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim8 {
+  background: url("../images/trollskogen-anim8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim9 {
+  background: url("../images/trollskogen-anim9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim10 {
+  background: url("../images/trollskogen-anim10.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim11 {
+  background: url("../images/trollskogen-anim11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-anim12 {
+  background: url("../images/trollskogen-anim12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-home {
+  background: url("../images/trollskogen-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .jumbotron-bg-home {
   background: url("../images/trollskogen-home.jpg");
