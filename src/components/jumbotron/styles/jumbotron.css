@@ -12,7 +12,6 @@
   transition: background 0.5s ease-in-out;
 }
 
-<<<<<<< HEAD
 .jumbotron-animate::after {
   content: url("../images/trollskogen-anim1.jpg")
     url("../images/trollskogen-anim3.jpg")
@@ -30,120 +29,76 @@
 
 .jumbotron-bg-anim1 {
   background: url("../images/trollskogen-anim1.jpg");
-=======
-.jumbotron-bg-anim1 {
-  background: url("../images/trollskogen-anim1.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim3 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim3.jpg");
-=======
-  background: url("../images/trollskogen-anim3.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim4 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim4.jpg");
-=======
-  background: url("../images/trollskogen-anim4.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim5 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim5.jpg");
-=======
-  background: url("../images/trollskogen-anim5.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim6 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim1.jpg");
-=======
-  background: url("../images/trollskogen-anim1.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim7 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim7.jpg");
-=======
-  background: url("../images/trollskogen-anim7.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim8 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim8.jpg");
-=======
-  background: url("../images/trollskogen-anim8.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim9 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim9.jpg");
-=======
-  background: url("../images/trollskogen-anim9.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim10 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim10.jpg");
-=======
-  background: url("../images/trollskogen-anim10.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim11 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim11.jpg");
-=======
-  background: url("../images/trollskogen-anim11.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .jumbotron-bg-anim12 {
-<<<<<<< HEAD
   background: url("../images/trollskogen-anim12.jpg");
-=======
-  background: url("../images/trollskogen-anim12.png");
->>>>>>> fixed issue with the carousel and added new images to it
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
