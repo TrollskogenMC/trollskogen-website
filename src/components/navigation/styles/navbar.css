@@ -23,6 +23,7 @@
 
 .nav-button-logo {
   font-size: 22px;
+  min-width: 148px;
 }
 
 .navbar a {
