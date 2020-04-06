@@ -8,6 +8,8 @@ import Donera from "../../../pages/donera/scripts/donera";
 import Help from "../../../pages/help/scripts/help";
 import Racing from "../../../pages/racing/scripts/racing";
 import Banned from "../../../pages/banned/scripts/banned";
+import logo from "../../../components/router/images/logo.png";
+
 export default function Router() {
   const [selectedNav, setSelectedNav] = useState(undefined);
 
@@ -69,7 +71,15 @@ export default function Router() {
               to={"/"}
               key={"/"}
             >
-              <NavButton logo={true}>Trollskogen</NavButton>
+              <NavButton logo={true}>
+                <img
+                  className="logo"
+                  src={logo}
+                  width="auto"
+                  height="45px"
+                  alt="hornta"
+                />
+              </NavButton>
             </Link>
             <div className="navbar-scorllable-section">
               {getLinks().map((link, index) => (
