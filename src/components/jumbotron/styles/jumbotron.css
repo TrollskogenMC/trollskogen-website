@@ -143,6 +143,11 @@
   color: #fdfdfd;
 }
 
+.transparent-bg {
+  background-color: rgb(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
 .jumbotron h1 {
   font-size: 32px;
 }

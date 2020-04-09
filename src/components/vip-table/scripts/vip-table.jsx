@@ -94,6 +94,7 @@ export default function VipTable() {
       <div className="row">
         <div className="cell main-cell">
           <span className="fc-green">/near</span>
+          <br />
           <span>Se vilka som är nära dig</span>
         </div>
         <div className="cell vip fc-gray">
