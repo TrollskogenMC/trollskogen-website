@@ -1,8 +1,5 @@
 import React from "react";
 import Button from "../../../components/button/scripts/button";
-import InfoBoxContainer from "../../../components/info-box/scripts/inf-box-container";
-import InfoBoxHeader from "../../../components/info-box/scripts/info-box-header";
-import InfoBoxInfo from "../../../components/info-box/scripts/info-box-info";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 import VipTable from "../../../components/vip-table/scripts/vip-table.jsx";
 import "../styles/donera.css";
