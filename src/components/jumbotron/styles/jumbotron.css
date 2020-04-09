@@ -119,7 +119,14 @@
 }
 
 .jumbotron-bg-donate {
-  background: url("../images/trollskogen-donate.jpg");
+  background: url("../images/vip.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-bg-ban {
+  background: url("../images/prison.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
