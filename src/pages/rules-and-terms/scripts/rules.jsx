@@ -46,7 +46,8 @@ export default function Rules() {
           <br />
           <li>
             Hack-klienter, x-ray och missbrukning av buggar i spelet är
-            förbjudet.
+            förbjudet. Inkluderar duplicering av items, zero ticks-farmer och
+            autoclickers.
           </li>
           <br />
           <li>
@@ -84,6 +85,10 @@ export default function Rules() {
           <li>
             Att använda flera konton på servern är inte okej, det ger ett
             oschysst övertag på servern.
+          </li>
+          <br />
+          <li>
+            Tillsvidare är det inte okej att göra farmer för pillagers/illagers.
           </li>
         </ol>
       </ul>
