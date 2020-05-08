@@ -54,9 +54,8 @@ export default function HomePage() {
         className={`${imageList[currentImageId] ||
           "jumbotron-bg-anim1"} jumbotron-animate`}
         title="Trollskogen - Svensk minecraft server 1.15"
-        text="Kul att du kikar in! Trollskogen är ett svenskt
-    minecraft-community som startades i februari 2019. Vi kör med ett gäng plugin, så som towny, mcmmo, lwc m.fl.
-    och vi värnar om att ha ett moget community."
+        text="Kul att du kikar in! Trollskogen är ett svenskt moget
+    minecraft-community som startades i februari 2019."
         linkArea={
           <React.Fragment>
             <span>Ip: mc.trollskogen.nu</span>
