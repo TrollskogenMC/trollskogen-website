@@ -7,8 +7,9 @@ import NavButton from "../../../components/navigation/scripts/nav-button";
 import Donera from "../../../pages/donera/scripts/donera";
 import Help from "../../../pages/help/scripts/help";
 import Racing from "../../../pages/racing/scripts/racing";
-import Banned from "../../../pages/banned/scripts/banned";
 import logo from "../../../components/router/images/logo.png";
+import BannedUserWiz from "../../../pages/banned/scripts/banned-user-wiz.jsx";
+import NotFound from "../../../pages/not-found/scripts/not-found.jsx";
 
 export default function Router() {
   const [selectedNav, setSelectedNav] = useState(undefined);
@@ -113,8 +114,8 @@ export default function Router() {
               <Route path="/donera" exact component={Donera} />
               <Route path="/hjalp" exact component={Help} />
               <Route path="/racing" exact component={Racing} />
-              <Route path="/bannad" exact component={Banned} />
-              <Route component={notFound} />
+              <Route path="/bannad" component={BannedUserWiz} />
+              <Route component={NotFound} />
             </Switch>
           </div>
         </div>

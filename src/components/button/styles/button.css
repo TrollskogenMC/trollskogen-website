@@ -3,7 +3,7 @@
   background-color: #6bcae2;
   padding: 6px 14px;
   border-radius: 10px;
-  font-size: 28px;
+  font-size: 22px;
   min-width: 20px;
   height: 30px;
   text-decoration: none;
@@ -15,6 +15,14 @@
   cursor: pointer;
   transition: color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
+}
+
+.btn-green {
+  background: #41924b;
+}
+
+.btn-green:hover {
+  background: #44994e;
 }
 
 .btn-gold {

@@ -2,6 +2,41 @@
   padding-top: 4em;
 }
 
+.user-ban-list {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ban-container:nth-child(odd) {
+  background-color: #afeaaa;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.banned-user-header {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.back-link {
+  margin-top: 1em;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ban-container {
+  border-radius: 5px;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  line-height: 1.4em;
+  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
 .ban-list {
   display: inline-flex;
   flex-direction: column;
@@ -22,6 +57,14 @@
   overflow: hidden;
 }
 
+.float-right {
+  float: right;
+}
+
+.ban-list-banned-name a {
+  color: black;
+}
+
 .ban-list-expire {
   width: 30%;
   flex-grow: 1;
@@ -38,7 +81,13 @@
 
 .ban-list-item {
   overflow: hidden;
+  color: black;
+  text-decoration: none;
   width: 100%;
+}
+
+.ban-list-item:hover {
+  cursor: pointer;
 }
 
 .ban-list-item:nth-child(odd):not(:first-child) {
@@ -72,22 +121,8 @@
   padding-left: 1em;
 }
 
-.shrunk .ban-item-body {
-  max-height: 0;
-  transition: max-height ease-in-out 0.5s;
-}
-.expanded .ban-item-body {
-  max-height: 1000px;
-  transition: max-height ease-in-out 0.5s;
-}
-
-.shrunk .expandable-icon {
-  transform: rotate(0);
-  transition: transform ease-in-out 0.4s;
-}
-.expanded .expandable-icon {
-  transform: rotate(-180deg);
-  transition: transform ease-in-out 0.4s;
+.right-arrow {
+  transform: rotate(270deg);
 }
 
 @media only screen and (min-width: 1240px) {
