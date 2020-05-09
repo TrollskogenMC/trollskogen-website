@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
 import "../styles/banned.css";
 import Ripple from "../../../components/loading/scripts/ripple.jsx";
 import DownIcon from "../../../icons/down-icon.jsx";
-import ExpandableContainer from "../../../components/info-box/scripts/expandable-container";
-
 import { format } from "date-fns";
 import { sv } from "date-fns/locale";
 
@@ -26,32 +25,22 @@ export default function Banned() {
           : "permanent"}
       </div>
       <div className="ban-list-field ban-list-more">
-        <span className="float-right margin-right-2 expandable-icon">
+        <span className="float-right margin-right-2 right-arrow">
           <DownIcon height="25" />
         </span>
       </div>
     </div>
   );
 
-  const renderBanBody = ban => (
-    <div className="ban-item-body">
-      <div className="ban-item-body-content">
-        <div className="padding-top">
-          Utfärdad av: {ban.issued_user_name || "okänd"}
-        </div>
-        <div>Anledning: {ban.reason}</div>
-      </div>
-    </div>
-  );
-
   const renderBans = ban => {
     return (
-      <li key={ban.id} className="capitalize ban-list-item">
-        <ExpandableContainer
-          headerContent={renderBanHeader(ban)}
-          bodyContent={renderBanBody(ban)}
-        />
-      </li>
+      <Link
+        className="capitalize ban-list-item"
+        key={ban.id}
+        to={`/bannad/${ban.user_id}`}
+      >
+        <li>{renderBanHeader(ban)}</li>
+      </Link>
     );
   };
 
@@ -70,17 +59,23 @@ export default function Banned() {
 
   useEffect(() => {
     fetchBannList((response, error) => {
-      if (response)
-        setBannedList(
-          response.sort((user, userTwo) => {
-            if (user.expiry_date === null) return 1;
-            if (userTwo.expiry_date === null) return -1;
-            if (user.expiry_date > userTwo.expiry_date) return -1;
-            if (user.expiry_date < userTwo.expiry_date) return 1;
-            return 0;
-          })
-        );
-      else console.log("Error", error);
+      if (response) {
+        const sortedResponse = response.sort((user, userTwo) => {
+          if (user.issued_date > userTwo.issued_date) return -1;
+          if (user.issued_date < userTwo.issued_date) return 1;
+          return 0;
+        });
+
+        const filteredRes = sortedResponse.reduce((ban, current) => {
+          const x = ban.find(item => current.user_id === item.user_id);
+          if (!x) {
+            return ban.concat([current]);
+          } else {
+            return ban;
+          }
+        }, []);
+        setBannedList(filteredRes);
+      } else console.log("Error", error);
     });
   }, []);
 
