@@ -9,7 +9,7 @@ export default function Racing() {
   const [hasFetched, setHasFetched] = useState(false);
   const fetchRaces = callback => {
     axios
-      .get("https://api.trollskogen.nu/races")
+      .get("https://api.trollskogen.hornta.se/races")
       .then(response => {
         setHasFetched(true);
         callback(response.data.races);
