@@ -16,7 +16,7 @@ export default function BannedUser({ match }) {
 
   const fetchUser = (userId, callback) => {
     axios
-      .get(`https://api.trollskogen.nu/user/${userId}`)
+      .get(`https://api.trollskogen.hornta.se/user/${userId}`)
       .then(response => {
         setHasFetched(true);
         callback(response.data.user);

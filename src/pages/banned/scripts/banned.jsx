@@ -46,7 +46,7 @@ export default function Banned() {
 
   const fetchBannList = callback => {
     axios
-      .get("https://api.trollskogen.nu/bans")
+      .get("https://api.trollskogen.hornta.se/bans")
       .then(response => {
         setHasFetched(true);
         callback(response.data.bans);
