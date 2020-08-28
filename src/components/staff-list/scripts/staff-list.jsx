@@ -10,7 +10,7 @@ export default function StaffList() {
       <div className="staff-member">
         <img
           className="staff-img"
-          src={hornta}
+          src="https://minotar.net/armor/bust/hornta/100.png"
           width="75px"
           height="75px"
           alt="hornta"
@@ -21,7 +21,7 @@ export default function StaffList() {
       <div className="staff-member">
         <img
           className="staff-img"
-          src={philip}
+          src="https://minotar.net/armor/bust/philip2096/100.png"
           width="75px"
           height="75px"
           alt="philip2096"
@@ -32,7 +32,7 @@ export default function StaffList() {
       <div className="staff-member">
         <img
           className="staff-img"
-          src={opaso}
+          src="https://minotar.net/armor/bust/opaso/100.png"
           width="75px"
           height="75px"
           alt="opaso"

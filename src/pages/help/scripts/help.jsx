@@ -178,51 +178,6 @@ export default function Help() {
             headerContent={
               <InfoBoxHeader className="text-center">
                 <div className="donate-info-text">
-                  Verifiera dig på discord
-                  <span
-                    style={{ width: "25px" }}
-                    className="float-right margin-right-2 expandable-rotate"
-                  >
-                    <DownIcon height="25" />
-                  </span>
-                </div>
-              </InfoBoxHeader>
-            }
-            bodyContent={
-              <InfoBoxInfo>
-                För att få tillåtelse att prata på discord så måste du verifiera
-                ditt discord konto via minecraft-servern.
-                <br />
-                <br />
-                Först och främst måste du gå in på discord-servern, länken får
-                du alltid när du loggar in på trollskogen eller under kommandot
-                /help.
-                <br />
-                <br />
-                När du har hittat till discord-servern så kan du skriva in
-                kommandot /verify i trollskogens minecraft-server. Du kommer att
-                få en serie bokstäver och siffror i chatten och instruktion hur
-                du ska verifiera dig på servern.
-                <br />
-                <br />
-                Leta upp BOT:en "Troll Zeke" i medlemslistan på discord-servern
-                och skicka ett privat meddelande till honom med texten: "verify
-                [bokstavs- och siffer-kombinationen du fick i
-                minecraft-chatten]".
-                <br />
-                <br />
-                Om allt har gått rätt till så ska du nu ha fått ett svar från
-                Troll Zeke och du har nu ett grönt namn i discord-servern och du
-                ligger under kategorien "verifierad".
-              </InfoBoxInfo>
-            }
-          />
-        </InfoBoxContainer>
-        <InfoBoxContainer expandable>
-          <ExpandableContainer
-            headerContent={
-              <InfoBoxHeader className="text-center">
-                <div className="donate-info-text">
                   Öppna ditt hem
                   <span
                     style={{ width: "25px" }}

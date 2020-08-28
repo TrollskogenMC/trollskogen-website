@@ -53,7 +53,7 @@ export default function HomePage() {
       <Jumbotron
         className={`${imageList[currentImageId] ||
           "jumbotron-bg-anim1"} jumbotron-animate`}
-        title="Trollskogen - Svensk minecraft server 1.15"
+        title="Trollskogen - Svensk minecraft server 1.16.2"
         text="Kul att du kikar in! Trollskogen är ett svenskt moget
     minecraft-community som startades i februari 2019."
         linkArea={
