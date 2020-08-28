@@ -76,9 +76,8 @@ export default function HomePage() {
             med att alla ska följa de regler vi har satt upp.
             <br />
             <br />
-            På trollskogen kör vi på en svårare svårighetsgrad(hard), man får
-            inte mycket gratisitems och vi har stängt av hp-regenerering i
-            nether, allt för att göra minecraft lite mer utmanande!
+            På trollskogen kör vi på en svårare svårighetsgrad(hard) och man får
+            inga gratis-saker, allt för att göra minecraft lite mer utmanande!
             <br /> <br />
             Självklart trivs du som gillar lugn och ro och bara vill bygga i
             fred också! Då kan du gå med i en av våra towny städer, eller skapa
