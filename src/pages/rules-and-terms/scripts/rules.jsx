@@ -90,6 +90,7 @@ export default function Rules() {
           <li>
             Tillsvidare är det inte okej att göra farmer för pillagers/illagers.
           </li>
+          <br />
           <li>
             Om man har en speciell taxa för sin stad måste man förmedla tydligt
             vad den taxan innebär för alla medborgare.
