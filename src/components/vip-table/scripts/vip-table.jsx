@@ -130,6 +130,32 @@ export default function VipTable() {
       </div>
       <div className="row">
         <div className="cell main-cell">
+          <span className="fc-green">/crawl</span>
+          <br />
+          <span>Lägger dig i kravlingsläge</span>
+        </div>
+        <div className="cell vip fc-gray">
+          <CloseIcon height={20} />
+        </div>
+        <div className="cell vip-plus fc-green">
+          <CheckMarkIcon height={20} />
+        </div>
+      </div>
+      <div className="row">
+        <div className="cell main-cell">
+          <span className="fc-green">/lay</span>
+          <br />
+          <span>Lägg dig och sov på marken</span>
+        </div>
+        <div className="cell vip fc-gray">
+          <CloseIcon height={20} />
+        </div>
+        <div className="cell vip-plus fc-green">
+          <CheckMarkIcon height={20} />
+        </div>
+      </div>
+      <div className="row">
+        <div className="cell main-cell">
           <span className="fc-green">/top</span>
           <br />
           <span>Tar dig till den högsta platsen ovanför dig</span>
