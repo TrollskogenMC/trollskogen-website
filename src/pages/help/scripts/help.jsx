@@ -33,10 +33,9 @@ export default function Help() {
                 <br />
                 <br />
                 För att köpa ett stånd så högerklickar du på skylten som finns
-                utanför varje tomt stånd. Det kommer att dras 1500 trollmynt
-                från ditt spelarkonto. Var uppmärksam på att vi i staff säljer
-                vidare shopen om din shop står tom i några veckor, självklart
-                får du en del av dina pengar tillbaka.
+                utanför varje tomt. För varje högerklick på skylten lägger du
+                till en dag. Man kan max lägga till 21 dagar, om dagarna tar
+                slut nollställs din shop och andra kan köpa området.
                 <br />
                 <br />
                 När du har köpt ett stånd så är det dags att sätta upp din
