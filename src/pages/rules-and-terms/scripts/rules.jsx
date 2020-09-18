@@ -79,7 +79,7 @@ export default function Rules() {
           <br />
           <li>
             Samtliga redstone-klockor ska gå att stänga av och ska vara av när
-            de inte används.
+            du är offline.
           </li>
           <br />
           <li>
