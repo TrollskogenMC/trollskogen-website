@@ -1,22 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import HomePage from "../../../pages/home/scripts/home.jsx";
-import Rules from "../../../pages/rules-and-terms/scripts/rules.jsx";
+import Ripple from "../../../components/loading/scripts/ripple.jsx";
+import logo from "../../../components/router/images/logo.png";
 import Navbar from "../../../components/navigation/scripts/navbar";
 import NavButton from "../../../components/navigation/scripts/nav-button";
-import Donera from "../../../pages/donera/scripts/donera";
-import Help from "../../../pages/help/scripts/help";
-import Racing from "../../../pages/racing/scripts/racing";
-import logo from "../../../components/router/images/logo.png";
-import BannedUserWiz from "../../../pages/banned/scripts/banned-user-wiz.jsx";
-import NotFound from "../../../pages/not-found/scripts/not-found.jsx";
+
+const HomePage = lazy(() => import("../../../pages/home/scripts/home.jsx"));
+const Rules = lazy(() =>
+  import("../../../pages/rules-and-terms/scripts/rules.jsx")
+);
+const Donera = lazy(() => import("../../../pages/donera/scripts/donera"));
+const Help = lazy(() => import("../../../pages/help/scripts/help"));
+const Racing = lazy(() => import("../../../pages/racing/scripts/racing"));
+const BannedUserWiz = lazy(() =>
+  import("../../../pages/banned/scripts/banned-user-wiz.jsx")
+);
+const NotFound = lazy(() =>
+  import("../../../pages/not-found/scripts/not-found.jsx")
+);
 
 export default function Router() {
   const [selectedNav, setSelectedNav] = useState(undefined);
-
-  const notFound = () => {
-    return <div>Den här sidan verkar inte finnas.</div>;
-  };
 
   const handleItemClick = name => {
     setSelectedNav(name);
@@ -108,15 +112,17 @@ export default function Router() {
               height: "100%"
             }}
           >
-            <Switch>
-              <Route path="/" exact component={HomePage} />
-              <Route path="/regler" exact component={Rules} />
-              <Route path="/donera" exact component={Donera} />
-              <Route path="/hjalp" exact component={Help} />
-              <Route path="/racing" exact component={Racing} />
-              <Route path="/bannad" component={BannedUserWiz} />
-              <Route component={NotFound} />
-            </Switch>
+            <Suspense fallback={<Ripple />}>
+              <Switch>
+                <Route path="/" exact component={HomePage} />
+                <Route path="/regler" exact component={Rules} />
+                <Route path="/donera" exact component={Donera} />
+                <Route path="/hjalp" exact component={Help} />
+                <Route path="/racing" exact component={Racing} />
+                <Route path="/bannad" component={BannedUserWiz} />
+                <Route component={NotFound} />
+              </Switch>
+            </Suspense>
           </div>
         </div>
       </BrowserRouter>
