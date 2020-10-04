@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import "../styles/home.css";
 import StaffList from "../../../components/staff-list/scripts/staff-list";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
+import Snackbar from "../../../components/snackbar/scripts/snackbar.jsx";
 export default function HomePage() {
+  const [showSnackySnack, setShowSnackySnack] = useState(true);
   const [imageList, setImageList] = useState([]);
   const [currentImageId, setCurrentImageId] = useState(null);
   useEffect(() => {
@@ -62,7 +64,6 @@ export default function HomePage() {
           </React.Fragment>
         }
       />
-
       <div className="post-area">
         <br />
         <div className="post post-left">
@@ -90,6 +91,14 @@ export default function HomePage() {
           <StaffList />
         </div>
       </div>
+      {/** WIP <Snackbar
+        isOpen={showSnackySnack}
+        onAccept={() => {
+          setShowSnackySnack(false);
+        }}
+      >
+        Accepterar du våra kakor?
+      </Snackbar>*/}
     </div>
   );
 }

@@ -45,6 +45,12 @@ export default function Router() {
         isActive: selectedNav === "/donera"
       },
       {
+        content: "Karta",
+        type: "href",
+        href: "https://map.trollskogen.nu",
+        isActive: false
+      },
+      {
         content: "Hjälp",
         type: "button",
         linkTo: "/hjalp",
@@ -87,23 +93,31 @@ export default function Router() {
               </NavButton>
             </Link>
             <div className="navbar-scorllable-section">
-              {getLinks().map((link, index) => (
-                <Link
-                  onClick={() => {
-                    handleItemClick(link.linkTo);
-                  }}
-                  to={link.linkTo}
-                  key={link.linkTo}
-                >
-                  <NavButton
-                    className={`nav-button-${index}`}
-                    isActive={link.isActive}
-                    logo={link.type === "logo"}
+              {getLinks().map((link, index) =>
+                link.type === "href" ? (
+                  <a key={link.href} href={link.href}>
+                    <NavButton className={`nav-button-${index}`}>
+                      {link.content}
+                    </NavButton>
+                  </a>
+                ) : (
+                  <Link
+                    onClick={() => {
+                      handleItemClick(link.linkTo);
+                    }}
+                    to={link.linkTo}
+                    key={link.linkTo}
                   >
-                    {link.content}
-                  </NavButton>
-                </Link>
-              ))}
+                    <NavButton
+                      className={`nav-button-${index}`}
+                      isActive={link.isActive}
+                      logo={link.type === "logo"}
+                    >
+                      {link.content}
+                    </NavButton>
+                  </Link>
+                )
+              )}
             </div>
           </Navbar>
           <div
