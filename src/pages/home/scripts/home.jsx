@@ -55,61 +55,16 @@ export default function HomePage() {
       <Jumbotron
         className={`${imageList[currentImageId] ||
           "jumbotron-bg-anim1"} jumbotron-animate`}
-        title="Trollskogen - Svensk minecraft server 1.16.2"
-        text="Kul att du kikar in! Trollskogen är ett svenskt moget
-    minecraft-community som startades i februari 2019."
+        title="Trollskogen - Svensk minecraft server 1.16.4"
+        text="Kul att du kikar in! Trollskogen är ett svenskt, moget
+    minecraft-community som startades i februari 2019. 
+    Efter två år kör vi nu med en ny karta, som vi vill ska vara minst lika långsiktig som den förra, hoppas vi ses!"
         linkArea={
           <React.Fragment>
             <span>Ip: mc.trollskogen.nu</span>
           </React.Fragment>
         }
       />
-      <div className="post-area">
-        <div className="post post-left">
-          <hr />
-          <h2 className="post-title">Viktig info från Trollskogen staff</h2>
-          <p>
-            När vi började med trollskogen under januari 2019 så hade vi flera
-            mål, vi ville vara en ärlig, mognare server som var lite svårare och
-            vi ville vi ville inte radera världen var och varannan månad som
-            vissa servrar servrar kan göra. Idag, nästan 2 år sen starten så har
-            vi kommit till ett läge där ett av våra misstag som vi gjorde när vi
-            med Trollskogen, att vi började med en för stor värld, börjat sätta
-            spår.
-            <br /> <br />
-            Buggar som vi har sett nu de senaste veckorna med att portaler inte
-            fungerar och att vissa spelare har förlorat sina trollmynt beror på
-            att vi för några veckor sedan fick slut på hårddiskutrymme på
-            servern och därför blev vissa delar av världen och vissa plugins
-            filer korrupta. På grund av världens storlek så tror vi inte kan
-            fortsätta utöka kartan så mycket mer under kommande kommande
-            kommande uppdateringar, och och att ha plugin som dynmap är tyvärr
-            omöjligt idag.
-            <br /> <br />
-            Vi i staff har gemensamt beslutat att vi kommer vara tvungna att
-            nollställa kartan för att framtidssäkra Trollskogen. Vi planerar att
-            nollställa världen den 28:e november. Med den nya världen så kommer
-            vi att börja från noll, ekonomin, inventories och mcmmostats kommer
-            att nollställas, men självklart kommer alla ranker att vara kvar.
-            Vissa plugins har vi också valt att ta bort som inte används i lika
-            stor utsträckning längre, chesthops och att hyra område i spawn
-            kommer inte att vara möjligt längre. På sikt kommer vi också att ta
-            bort time is money och ersätta det med vårt nya egna plugin Quests.
-            <br /> <br />
-            Vi i staff är fullt förstående i att det är tråkigt att gamla byggen
-            försvinner, där så många minnen har skapats. Men nu ser vi fram emot
-            en ny mapp, där nya häftiga byggen kan byggas och nya minnen kan
-            skapas! <br />
-            <br />
-            //Trollskogen staff
-          </p>
-        </div>
-        <div className="post post-right post-staff-area">
-          <hr />
-          <h2>Vi i staff</h2>
-          <StaffList />
-        </div>
-      </div>
       <div className="post-area">
         <br />
         <div className="post post-left">
@@ -130,6 +85,11 @@ export default function HomePage() {
             fred också! Då kan du gå med i en av våra towny städer, eller skapa
             en själv, i dessa kan man stänga av monster.
           </p>
+        </div>
+        <div className="post post-right post-staff-area">
+          <hr />
+          <h2>Vi i staff</h2>
+          <StaffList />
         </div>
       </div>
       {/** WIP <Snackbar
