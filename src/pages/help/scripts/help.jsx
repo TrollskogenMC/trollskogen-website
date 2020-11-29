@@ -14,70 +14,7 @@ export default function Help() {
           <ExpandableContainer
             headerContent={
               <InfoBoxHeader className="text-center">
-                <div className="donate-info-text">
-                  Skapa en shop
-                  <span
-                    style={{ width: "25px" }}
-                    className="float-right margin-right-2 expandable-rotate"
-                  >
-                    <DownIcon height="25" />
-                  </span>
-                </div>
-              </InfoBoxHeader>
-            }
-            bodyContent={
-              <InfoBoxInfo>
-                Sugen på att tjäna lite pengar genom att skapa en shop? I spawn
-                har vi marknadsplatsen där du kan köpa ett stånd för att sälja
-                dina dyrbarheter till andra spelare.
-                <br />
-                <br />
-                För att köpa ett stånd så högerklickar du på skylten som finns
-                utanför varje tomt. För varje högerklick på skylten lägger du
-                till en dag. Man kan max lägga till 21 dagar, om dagarna tar
-                slut nollställs din shop och andra kan köpa området.
-                <br />
-                <br />
-                När du har köpt ett stånd så är det dags att sätta upp din
-                första chestshop. Genom att sätta ut en kista med en skylt
-                ovanför eller på kistan så skapas din shop. Var nogrann med att
-                skylten är rätt formatterad enligt följande exempel:
-                <br />
-                <br />
-                [ditt användarnamn]
-                <br />
-                [antal]
-                <br />
-                [köp: sälj kostnad]
-                <br />
-                [Item]
-                <br />
-                <br />
-                philip2096
-                <br />
-                64
-                <br />
-                B:10 S:20 - där b står för buy och S för sell
-                <br />
-                Diamond
-                <h3>Kommandon:</h3>
-                <div className="group-list">
-                  <ul className="fc-light-grey">
-                    <li className="padding">
-                      /iteminfo - ger information om vad saken som du håller i
-                      handen heter och annan info.
-                    </li>
-                  </ul>
-                </div>
-              </InfoBoxInfo>
-            }
-          />
-        </InfoBoxContainer>
-        <InfoBoxContainer expandable>
-          <ExpandableContainer
-            headerContent={
-              <InfoBoxHeader className="text-center">
-                <div className="donate-info-text">
+                <div className="help-info-text">
                   Skapa en stad
                   <span
                     style={{ width: "25px" }}
@@ -120,7 +57,7 @@ export default function Help() {
           <ExpandableContainer
             headerContent={
               <InfoBoxHeader className="text-center">
-                <div className="donate-info-text">
+                <div className="help-info-text">
                   Övriga kommandon
                   <span
                     style={{ width: "25px" }}
@@ -176,7 +113,7 @@ export default function Help() {
           <ExpandableContainer
             headerContent={
               <InfoBoxHeader className="text-center">
-                <div className="donate-info-text">
+                <div className="help-info-text">
                   Öppna ditt hem
                   <span
                     style={{ width: "25px" }}

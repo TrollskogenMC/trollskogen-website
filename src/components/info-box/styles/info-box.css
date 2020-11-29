@@ -10,6 +10,7 @@
   background-color: #41924b;
   color: #fdfdfd;
   height: 2.5em;
+  max-height: 2.5em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   font-weight: bold;
