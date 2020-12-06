@@ -29,17 +29,6 @@ export default function StaffList() {
         Philip2096
         <br /> Admin
       </div>
-      <div className="staff-member">
-        <img
-          className="staff-img"
-          src="https://minotar.net/armor/bust/opaso/100.png"
-          width="75px"
-          height="75px"
-          alt="opaso"
-        />
-        opaso
-        <br /> Moderator
-      </div>
     </div>
   );
 }
