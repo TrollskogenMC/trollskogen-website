@@ -12,15 +12,9 @@ export default function HomePage() {
       shuffle([
         "jumbotron-bg-anim1",
         "jumbotron-bg-anim3",
-        "jumbotron-bg-anim4",
-        "jumbotron-bg-anim5",
         "jumbotron-bg-anim6",
         "jumbotron-bg-anim7",
-        "jumbotron-bg-anim8",
-        "jumbotron-bg-anim9",
-        "jumbotron-bg-anim10",
-        "jumbotron-bg-anim11",
-        "jumbotron-bg-anim12"
+        "jumbotron-bg-anim8"
       ])
     );
   }, []);
