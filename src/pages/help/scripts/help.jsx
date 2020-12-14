@@ -151,6 +151,61 @@ export default function Help() {
             }
           />
         </InfoBoxContainer>
+        <InfoBoxContainer expandable>
+          <ExpandableContainer
+            headerContent={
+              <InfoBoxHeader className="text-center">
+                <div className="help-info-text">
+                  Skydda område
+                  <span
+                    style={{ width: "25px" }}
+                    className="float-right margin-right-2 expandable-rotate"
+                  >
+                    <DownIcon height="25" />
+                  </span>
+                </div>
+              </InfoBoxHeader>
+            }
+            bodyContent={
+              <InfoBoxInfo>
+                För att skydda dina byggen eller redstone-maskiner så
+                rekomenderar vi att man skyddar det. Kistor är låsta automatiskt
+                och vi rekommenderar inte att ta bort de låsen.
+                <br />
+                <br />
+                För att skydda ett område så räcker det att spela en liten stund
+                på servern och skaffa en guldspade.
+                <br />
+                Med guldspaden kan du därefter högerklicka för att markera 2
+                hörn i en tredimensionell kub.
+                <br />
+                Nu är det klart och dina saker inom området är skyddade!
+                <h3>Kommandon:</h3>
+                <div className="group-list">
+                  <ul className="fc-light-grey">
+                    <li className="padding">
+                      /trust [namn] - Tillåt en annan spelare bygga i dina
+                      "claims".
+                    </li>
+                    <li className="padding">
+                      /untrust [namn] - Tillåt inte längre en annan spelare
+                      "claims".
+                    </li>
+                    <li className="padding">
+                      /claimlist - listar dina skyddade områden.
+                    </li>
+                    <li className="padding">
+                      /AbandonClaim - tar bort den claim du står i just nu
+                    </li>
+                    <li className="padding">
+                      /AbandonAllClaims - tar bort all dina skyddade områden
+                    </li>
+                  </ul>
+                </div>
+              </InfoBoxInfo>
+            }
+          />
+        </InfoBoxContainer>
       </div>
     </div>
   );
