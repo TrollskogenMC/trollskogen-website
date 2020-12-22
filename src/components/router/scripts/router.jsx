@@ -39,10 +39,10 @@ export default function Router() {
         isActive: selectedNav === "/regler"
       },
       {
-        content: "Donera",
+        content: "Stöd oss",
         type: "button",
-        linkTo: "/donera",
-        isActive: selectedNav === "/donera"
+        linkTo: "/stod-oss",
+        isActive: selectedNav === "/stod-oss"
       },
       {
         content: "Karta",
@@ -130,7 +130,7 @@ export default function Router() {
               <Switch>
                 <Route path="/" exact component={HomePage} />
                 <Route path="/regler" exact component={Rules} />
-                <Route path="/donera" exact component={Donera} />
+                <Route path="/stod-oss" exact component={Donera} />
                 <Route path="/hjalp" exact component={Help} />
                 <Route path="/racing" exact component={Racing} />
                 <Route path="/bannad" component={BannedUserWiz} />
