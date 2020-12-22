@@ -9,15 +9,15 @@ export default function Donera() {
     <div>
       <Jumbotron
         className="jumbotron-bg-donate"
-        title="Donationer"
+        title="Stöd oss"
         text="För att vi ska kunna utveckla servern och betala de utgifter som
             kommer med att driva en minecraftserver så är vi beroende av
-            donationer. Som tack för hjälpen får du som donerar tillgång till
+            donationer. Som tack för hjälpen får du som stödjer oss tillgång till
             cosmetics, 2 extra homes och några bekväma kommandon."
         linkArea={
           <span>
             <Button href="https://trollskogen.tebex.io" className="btn-gold">
-              Donera här
+              Stöd oss här
             </Button>
           </span>
         }
