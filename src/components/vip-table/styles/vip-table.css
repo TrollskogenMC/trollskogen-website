@@ -24,6 +24,10 @@
   border-bottom: 2px solid #41924b;
 }
 
+.header-default {
+  color: #5c5c5c;
+}
+
 .header-vip {
   color: #ffaa00;
 }
@@ -33,7 +37,8 @@
 }
 
 .header-vip,
-.header-vip-plus {
+.header-vip-plus,
+.header-default {
   font-weight: 700;
   font-size: 18px;
 }
