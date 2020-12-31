@@ -45,6 +45,13 @@ export default function Router() {
         isActive: selectedNav === "/stod-oss"
       },
       {
+        content: "Discord",
+        type: "button",
+        linkTo: "href",
+        href: "https://discord.trollskogen.nu",
+        isActive: false
+      },
+      {
         content: "Karta",
         type: "href",
         href: "https://map.trollskogen.nu",
