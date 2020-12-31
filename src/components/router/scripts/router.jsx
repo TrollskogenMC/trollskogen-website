@@ -46,8 +46,7 @@ export default function Router() {
       },
       {
         content: "Discord",
-        type: "button",
-        linkTo: "href",
+        type: "href",
         href: "https://discord.trollskogen.nu",
         isActive: false
       },
