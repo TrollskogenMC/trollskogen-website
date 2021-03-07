@@ -41,6 +41,22 @@ export default function VipTable() {
         </div>
       </div>
       <div className="row">
+        <div className="cell main-cell">
+          <span className="fc-green">Crafta osynliga itemframes</span>
+          <br />
+          <span>Crafta med 8 itemframes runt en potion of invisibility.</span>
+        </div>
+        <div className="cell vip fc-gray">
+          <CloseIcon height={20} />
+        </div>
+        <div className="cell vip fc-green">
+          <CheckMarkIcon height={20} />
+        </div>
+        <div className="cell vip-plus fc-green">
+          <CheckMarkIcon height={20} />
+        </div>
+      </div>
+      <div className="row">
         <div className="cell main-cell">Antal auktioner i /ah</div>
         <div className="cell">2</div>
         <div className="cell vip">5</div>
