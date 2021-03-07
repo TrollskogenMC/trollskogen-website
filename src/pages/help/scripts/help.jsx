@@ -206,6 +206,76 @@ export default function Help() {
             }
           />
         </InfoBoxContainer>
+        <InfoBoxContainer expandable>
+          <ExpandableContainer
+            headerContent={
+              <InfoBoxHeader className="text-center">
+                <div className="help-info-text">
+                  Elytror är slut i end, vad ska jag göra?
+                  <span
+                    style={{ width: "25px" }}
+                    className="float-right margin-right-2 expandable-rotate"
+                  >
+                    <DownIcon height="25" />
+                  </span>
+                </div>
+              </InfoBoxHeader>
+            }
+            bodyContent={
+              <InfoBoxInfo>
+                På servern finns det en chans att wandering traders säljer
+                elytror. <br />
+                <br />
+                <h3>Info:</h3>
+                <div className="group-list">
+                  <ul className="fc-light-grey">
+                    <li className="padding">
+                      En elytra kostar mellan 16-45 emeraldblock + 48-64
+                      diamonds.
+                    </li>
+                    <li className="padding">
+                      60% chans att WT säljer 1 elytra.
+                    </li>
+                    <li className="padding">
+                      25% chans att WT säljer 2 elytror.
+                    </li>
+                    <li className="padding">
+                      15% chans att WT säljer 3 elytror.
+                    </li>
+                    <li className="padding">
+                      10% chans att durability på elytra är 100%.
+                    </li>
+                    <li className="padding">
+                      15% chans att durability på elytra är 75%.
+                    </li>
+                    <li className="padding">
+                      25% chans att durability på elytra är 40%
+                    </li>
+
+                    <li className="padding">
+                      50% chans att durability på elytra är 20%.
+                    </li>
+                    <li className="padding">
+                      20% chans att elytra har unbreaking enchantment.
+                    </li>
+                    <li className="padding">
+                      50% chans att elytra får unbreaking 1.
+                    </li>
+                    <li className="padding">
+                      35% chans att elytra får unbreaking 2.
+                    </li>
+                    <li className="padding">
+                      15% chans att elytra får unbreaking 3.
+                    </li>
+                    <li className="padding">
+                      15% chans att elytra får unbreaking 3.
+                    </li>
+                  </ul>
+                </div>
+              </InfoBoxInfo>
+            }
+          />
+        </InfoBoxContainer>
       </div>
     </div>
   );
