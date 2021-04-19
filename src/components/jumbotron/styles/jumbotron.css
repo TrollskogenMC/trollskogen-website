@@ -70,6 +70,13 @@
   background-size: cover;
 }
 
+.jumbotron-bg-quests {
+  background: url("../images/quests.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron-bg-ban {
   background: url("../images/prison.jpg");
   background-position: center;
