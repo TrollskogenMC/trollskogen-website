@@ -1,0 +1,76 @@
+import React, { useState, useEffect } from "react";
+import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
+//import "../styles/quests.css";
+import Ripple from "../../../components/loading/scripts/ripple.jsx";
+//import DownIcon from "../../../icons/down-icon.jsx";
+//import { format } from "date-fns";
+//import { sv } from "date-fns/locale";
+import axios from "axios";
+
+export default function Quests() {
+  // const [questList, setQuestListtBannedList] = useState([]);
+  // const [hasFetched, setHasFetched] = useState(false);
+
+  // const fetchQuests = callback => {
+  //   axios
+  //     .get("http://localhost:3000/ongoingquests/complete")
+  //     .then(response => {
+  //       setHasFetched(true);
+  //       callback(response.data.ongoingquests);
+  //     })
+  //     .catch(err => {
+  //       setHasFetched(true);
+  //       callback(undefined, err);
+  //     });
+  // };
+
+  //useEffect(() => {
+  //  fetchQuests((response, error) => {
+  //    if (response) {
+  //    }
+  //  });
+  //}, []);
+
+  return (
+    <div>
+      <Jumbotron
+        className="jumbotron-bg-quests"
+        title="Quests (BETA)"
+        text="Vårt mål är att man alltid ska ha något nytt att göra och något att kämpa mot, därför lanserar vi nu quests."
+      />
+      <div className="banned-content">
+        <br />
+        <br />
+        <h2>Hur fungerar det?</h2>
+        Varje dag kommer du att automatiskt tilldelas 2 dagliga quester som du
+        kan utföra.
+        <br />
+        <br />
+        Varje vecka kommer du också att tilldelas 1 veckoquest
+        <br />
+        <br />
+        Observera att quests är något helt nytt och kommer att fortsätta byggas
+        på i framtiden. Det vi har planer på just nu är: andra typer än
+        veckoquests och dagliga quests och topplista.
+        <br />
+        <br />
+        {/*<h2>Topplistan</h2>
+        {hasFetched && questList && questList.length > 0 ? (
+          <div className="quest-top-three">
+            <div>aksdj</div>
+            <div>aksdj</div>
+            <div>aksdj</div>
+          </div>
+        ) : !hasFetched ? (
+          <div>
+            <Ripple />
+          </div>
+        ) : (
+          <div className="fc-light-grey">
+            Tekniskt fel, vi kunde inte ladda in bans just nu..
+          </div>
+        )}*/}
+      </div>
+    </div>
+  );
+}

@@ -12,6 +12,7 @@ const Rules = lazy(() =>
 const Donera = lazy(() => import("../../../pages/donera/scripts/donera"));
 const Help = lazy(() => import("../../../pages/help/scripts/help"));
 const Racing = lazy(() => import("../../../pages/racing/scripts/racing"));
+const Quests = lazy(() => import("../../../pages/quests/scripts/quests"));
 const BannedUserWiz = lazy(() =>
   import("../../../pages/banned/scripts/banned-user-wiz.jsx")
 );
@@ -73,6 +74,12 @@ export default function Router() {
         type: "button",
         linkTo: "/bannad",
         isActive: selectedNav === "/bannad"
+      },
+      {
+        content: "Quests",
+        type: "button",
+        linkTo: "/quests",
+        isActive: selectedNav === "/quests"
       }
     ];
   };
@@ -140,6 +147,7 @@ export default function Router() {
                 <Route path="/hjalp" exact component={Help} />
                 <Route path="/racing" exact component={Racing} />
                 <Route path="/bannad" component={BannedUserWiz} />
+                <Route path="/quests" component={Quests} />
                 <Route component={NotFound} />
               </Switch>
             </Suspense>
