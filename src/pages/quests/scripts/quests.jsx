@@ -13,7 +13,7 @@ export default function Quests() {
 
   const fetchQuests = callback => {
     axios
-      .get("http://api.trollskogen.hornta.se/ongoingquests/top")
+      .get("http://localhost:3000/ongoingquests/top")
       .then(response => {
         setHasFetched(true);
         callback(response.data.ongoingQuests);
@@ -26,7 +26,7 @@ export default function Quests() {
 
   const renderUser = ({ user_name, total_quests }, placement) => {
     return (
-      <div className="toplist-user">
+      <div className="toplist-user" key={user_name}>
         <div className={`toplist-placement toplist-placement-${placement}`}>
           <div className="toplist-placement-number">{placement}</div>
           {placement < 4 && (
