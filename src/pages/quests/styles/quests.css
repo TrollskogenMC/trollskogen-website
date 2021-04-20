@@ -1,0 +1,37 @@
+.quest-top {
+  width: 100%;
+  display: grid;
+}
+
+.toplist-user:nth-child(even) {
+  background-color: #afeaaa;
+}
+
+.toplist-user {
+  padding: 0.25em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 4fr 8fr;
+  grid-column-gap: 0.2em;
+}
+
+.toplist-name {
+  text-align: left;
+}
+
+.toplist-placement-number {
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+  padding: 0.25em;
+}
+
+.toplist-placement-1,
+.toplist-placement-2,
+.toplist-placement-3 {
+  font-weight: 700;
+}
+
+.toplist-total {
+  text-align: right;
+}

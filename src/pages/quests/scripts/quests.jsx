@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Jumbotron from "../../../components/jumbotron/scripts/jumbotron.jsx";
-//import "../styles/quests.css";
+import "../styles/quests.css";
 import Ripple from "../../../components/loading/scripts/ripple.jsx";
 //import DownIcon from "../../../icons/down-icon.jsx";
 //import { format } from "date-fns";
@@ -8,28 +8,51 @@ import Ripple from "../../../components/loading/scripts/ripple.jsx";
 import axios from "axios";
 
 export default function Quests() {
-  // const [questList, setQuestListtBannedList] = useState([]);
-  // const [hasFetched, setHasFetched] = useState(false);
+  const [questList, setQuestListtBannedList] = useState([]);
+  const [hasFetched, setHasFetched] = useState(false);
 
-  // const fetchQuests = callback => {
-  //   axios
-  //     .get("http://localhost:3000/ongoingquests/complete")
-  //     .then(response => {
-  //       setHasFetched(true);
-  //       callback(response.data.ongoingquests);
-  //     })
-  //     .catch(err => {
-  //       setHasFetched(true);
-  //       callback(undefined, err);
-  //     });
-  // };
+  const fetchQuests = callback => {
+    axios
+      .get("http://api.trollskogen.hornta.se/ongoingquests/top")
+      .then(response => {
+        setHasFetched(true);
+        callback(response.data.ongoingQuests);
+      })
+      .catch(err => {
+        setHasFetched(true);
+        callback(undefined, err);
+      });
+  };
 
-  //useEffect(() => {
-  //  fetchQuests((response, error) => {
-  //    if (response) {
-  //    }
-  //  });
-  //}, []);
+  const renderUser = ({ user_name, total_quests }, placement) => {
+    return (
+      <div className="toplist-user">
+        <div className={`toplist-placement toplist-placement-${placement}`}>
+          <div className="toplist-placement-number">{placement}</div>
+          {placement < 4 && (
+            <img
+              src={`https://minotar.net/avatar/${user_name}/50.png`}
+              width="30px"
+              height="30px"
+              alt={user_name}
+            />
+          )}
+        </div>
+        <div className="toplist-name">{user_name}</div>
+        <div className="toplist-total">{total_quests}</div>
+      </div>
+    );
+  };
+
+  useEffect(() => {
+    fetchQuests((response, error) => {
+      if (response) {
+        setQuestListtBannedList(response);
+      } else {
+        console.log("error while fetching quests", error);
+      }
+    });
+  }, []);
 
   return (
     <div>
@@ -54,12 +77,15 @@ export default function Quests() {
         veckoquests och dagliga quests och topplista.
         <br />
         <br />
-        {/*<h2>Topplistan</h2>
+        <h2>Topplistan</h2>
         {hasFetched && questList && questList.length > 0 ? (
-          <div className="quest-top-three">
-            <div>aksdj</div>
-            <div>aksdj</div>
-            <div>aksdj</div>
+          <div className="quest-top">
+            <div className="toplist-user">
+              <div className={`toplist-placement`}>Placering</div>
+              <div className="toplist-name">Spelare</div>
+              <div className="toplist-total">Avklarade quests</div>
+            </div>
+            {questList.map((user, key) => renderUser(user, key + 1))}
           </div>
         ) : !hasFetched ? (
           <div>
@@ -67,9 +93,9 @@ export default function Quests() {
           </div>
         ) : (
           <div className="fc-light-grey">
-            Tekniskt fel, vi kunde inte ladda in bans just nu..
+            Tekniskt fel, vi kunde inte ladda in topplistan just nu..
           </div>
-        )}*/}
+        )}
       </div>
     </div>
   );

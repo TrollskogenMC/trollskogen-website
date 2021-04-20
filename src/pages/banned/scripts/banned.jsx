@@ -104,7 +104,7 @@ export default function Banned() {
             <ul className="ban-list">
               <li className="capitalize ban-item-header-container ban-list-item-header">
                 <div className="ban-list-field ban-list-banned-name f-bold">
-                  Användare
+                  Spelare
                 </div>
                 <div className="ban-list-field ban-list-expire f-bold">
                   Utgår
