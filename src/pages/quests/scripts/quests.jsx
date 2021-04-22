@@ -73,8 +73,8 @@ export default function Quests() {
         <br />
         <br />
         Observera att quests är något helt nytt och kommer att fortsätta byggas
-        på i framtiden. Det vi har planer på just nu är: andra typer än
-        veckoquests och dagliga quests och topplista.
+        på i framtiden, vi har lite idéer för hur man kan bygga vidare på
+        pluginet om intresset för pluginet är tillräckligt stort.
         <br />
         <br />
         <h2>Topplistan</h2>
