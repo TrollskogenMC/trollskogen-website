@@ -13,7 +13,7 @@ export default function Quests() {
 
   const fetchQuests = callback => {
     axios
-      .get("http://localhost:3000/ongoingquests/top")
+      .get("https://api.trollskogen.hornta.se/ongoingquests/top")
       .then(response => {
         setHasFetched(true);
         callback(response.data.ongoingQuests);
