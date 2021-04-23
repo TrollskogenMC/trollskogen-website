@@ -44,10 +44,20 @@ export default function Quests() {
     );
   };
 
+  const compareBanlist = (a, b) => {
+    if (a.total_quests > b.total_quests) {
+      return -1;
+    }
+    if (a.total_quests < b.total_quests) {
+      return 1;
+    }
+    return 0;
+  };
+
   useEffect(() => {
     fetchQuests((response, error) => {
       if (response) {
-        setQuestListtBannedList(response);
+        setQuestListtBannedList(response.sort(compareBanlist));
       } else {
         console.log("error while fetching quests", error);
       }
